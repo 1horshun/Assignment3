@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Assignment3.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Home</title>
+    <link href="resources/bs5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="resources/style.css" rel="stylesheet" type="text/css">
+    <link href="resources/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="super-container">
+            <%-- Header --%>
+            <header class="header trans-300">
+                <!-- MAIN NAVIGATION -->
+                <div class="main-nav-container container">
+                    <div class="row">
+                        <div class="col-lg-12 text-right">
+                            <div class="logo-container">
+                                <a href="home.html" class="section-title">Nine.<span>Ever</span></a>
+                                <%--<%String name = (String)session.getAttribute("User"); %>--%>
+                            </div>
+
+                            <nav class="navbar">
+                                <ul class="navbar-menu">
+                                    <li><a href="best-selling.html">Best Selling</a></li>
+                                    <li><a href="new-arrivals.html">New Arrivals</a></li>
+                                    <li><a href="top.html">Top</a></li>
+                                    <li><a href="bottom.html">Bottom</a></li>
+                                    <li><a href="set.html">Set</a></li>
+                                </ul>
+
+                                <ul class="navbar-user">
+                                    <li class="showBtn"><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                                    <%--<li><a href="login.jsp"><i class="fa fa-user" aria-hidden="true"><%out.println(name); %></i></a></li>--%>
+                                    <li><a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class = "break-100"></div>
+
+      
+
+            <div class ="content-placeholder">
+                <asp:ContentPlaceHolder ID="MainContentPlaceHolder1" runat="server">
+                   
+                </asp:ContentPlaceHolder>
+            </div>
+
+            <div class = "break-100"></div>
+
+            <!-- FOOTER -->
+            <footer class="footer container-fluid" style="padding-left: 300px;">
+                <div class="footer-top section">
+                    <div class="container row">
+                        <!-- LEFT SIDE -->
+                        <div class="single-footer about col-6 col-lg-3">
+                            <div class="logo">
+                                <a href="home.html">
+                                    <img class="mb-2" src="images/footer-logo.png" alt="#"></a>
+                            </div>
+
+                            <br />
+
+                            <small class="d-block mb-3 text-muted">ï¿½2020 - 2021. All Rights Reserved.</small>
+                        </div>
+
+                        <!-- QUICK LINKS -->
+                        <div class="col-6 col-md">
+                            <div class="single-footer links quick">
+                                <h4>Quick Links</h4>
+                                <ul class="list-unstyled text-small">
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="about-us.html">About Us</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="contact.html">Contact Us</a>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- HELP -->
+                        <div class="col-6 col-md">
+                            <div class="single-footer links help">
+                                <h4>Help</h4>
+                                <ul class="list-unstyled text-small">
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="terms-conditions.html">Terms & Conditions</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="faqs.html">FAQs</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- STAY CONNECTED -->
+                        <div class="col-6 col-md">
+                            <div class="single-footer links social">
+                                <h4>Stay Connected</h4>
+                                <ul class="list-unstyled text-small">
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://www.instagram.com/nine.ever/"><i class="fa fa-instagram"></i>&ensp;Instagram</a></li>
+                                    <li class="mb-1"><a class="link-secondary text-decoration-none" href="https://bit.ly/2SD6tq7"><i class="fa fa-facebook-official"></i>&ensp;Facebook</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </form>
+    <script src="main.js"></script>
+    <script src="resources/bs5/js/bootstrap.min.js"></script>
+</body>
+</html>
