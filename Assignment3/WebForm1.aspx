@@ -95,9 +95,7 @@
         
         <div class="product5">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image9" runat="server" src="images/march/top/A-1188.jpg"/>
             <div class="overlay">
-                <asp:Image class="overlay-img" ID="Image10" runat="server" src="images/march/top/A-1197.jpg"/>
             </div>
             </div>
             <div class="content">
@@ -116,9 +114,7 @@
         </div>
         <div class="product6">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image11" runat="server" src="images/march/top/A-1190.jpg"/>
             <div class="overlay">
-                <asp:Image class="overlay-img" ID="Image12" runat="server" src="images/march/top/A-1192.jpg"/>
             </div>
             </div>
             <div class="content">
@@ -137,9 +133,7 @@
         </div>
         <div class="product7">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image13" runat="server" src="images/march/top/A-1198.jpg"/>
             <div class="overlay">
-                <asp:Image class="overlay-img" ID="Image14" runat="server" src="images/march/top/A-1204.jpg"/>
             </div>
             </div>
             <div class="content">
@@ -157,10 +151,6 @@
             </div>
         </div>
         <div class="product8">
-            <div class="image-box">
-                <asp:Image class="product-img" ID="Image15" runat="server" src="images/march/bottom/A-1024.jpg"/>
-            <div class="overlay">
-                <asp:Image class="overlay-img" ID="Image16" runat="server" src="images/march/bottom/A-1026.jpg"/>
             </div>
             </div>
             <div class="content">
@@ -178,11 +168,6 @@
             </div>
         </div>
         <div class="product9">
-            <div class="image-box">
-                <asp:Image class="product-img" ID="Image17" runat="server" src="images/march/bottom/A-1100.jpg"/>
-            <div class="overlay">
-                <asp:Image class="overlay-img" ID="Image18" runat="server" src="images/march/bottom/A-1101.jpg"/>
-            </div>
             </div>
             <div class="content">
                 <asp:Label CssClass="product-name" ID="Label33" runat="server" Text="Product Name"></asp:Label>
@@ -199,11 +184,6 @@
             </div>
         </div>
         <div class="product10">
-            <div class="image-box">
-                <asp:Image class="product-img" ID="Image19" runat="server" src="images/march/bottom/A-1133.jpg"/>
-            <div class="overlay">
-                <asp:Image class="overlay-img" ID="Image20" runat="server" src="images/march/bottom/IMG_8204.jpg"/>
-            </div>
             </div>
             <div class="content">
                 <asp:Label CssClass="product-name" ID="Label37" runat="server" Text="Product Name"></asp:Label>
@@ -220,11 +200,6 @@
             </div>
         </div>
         <div class="product11">
-            <div class="image-box">
-                <asp:Image class="product-img" ID="Image21" runat="server" src="images/march/bottom/A-1215.jpg"/>
-            <div class="overlay">
-                <asp:Image class="overlay-img" ID="Image22" runat="server" src="images/march/bottom/A-1218.jpg"/>
-            </div>
             </div>
             <div class="content">
                 <asp:Label CssClass="product-name" ID="Label41" runat="server" Text="Product Name"></asp:Label>
@@ -241,11 +216,6 @@
             </div>
         </div>
         <div class="product12">
-            <div class="image-box">
-                <asp:Image class="product-img" ID="Image23" runat="server" src="images/march/bottom/IMG_9610.JPG"/>
-            <div class="overlay">
-                <asp:Image class="overlay-img" ID="Image24" runat="server" src="images/march/bottom/IMG_9609.JPG"/>
-            </div>
             </div>
             <div class="content">
                 <asp:Label CssClass="product-name" ID="Label45" runat="server" Text="Product Name"></asp:Label>
