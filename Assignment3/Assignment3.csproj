@@ -1,0 +1,375 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A864F511-0A95-4B5E-B3AD-8B8D89D5E12A}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Assignment3</RootNamespace>
+    <AssemblyName>Assignment3</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44323</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\banner-1.png" />
+    <Content Include="images\banner-2.png" />
+    <Content Include="images\banner-3.png" />
+    <Content Include="images\best-selling\bottom\A-1100.jpg" />
+    <Content Include="images\best-selling\bottom\A-1101.jpg" />
+    <Content Include="images\best-selling\bottom\A-1133.jpg" />
+    <Content Include="images\best-selling\bottom\A-1134.jpg" />
+    <Content Include="images\best-selling\bottom\A-1135.jpg" />
+    <Content Include="images\best-selling\bottom\IMG_0670.JPG" />
+    <Content Include="images\best-selling\bottom\IMG_0671.JPG" />
+    <Content Include="images\best-selling\bottom\IMG_0672.JPG" />
+    <Content Include="images\best-selling\bottom\IMG_8204.jpg" />
+    <Content Include="images\best-selling\top\A-1002.jpg" />
+    <Content Include="images\best-selling\top\A-1003.jpg" />
+    <Content Include="images\best-selling\top\A-1004.jpg" />
+    <Content Include="images\best-selling\top\A-1005.jpg" />
+    <Content Include="images\best-selling\top\A-1006.jpg" />
+    <Content Include="images\best-selling\top\A-1125.jpg" />
+    <Content Include="images\best-selling\top\A-1131.jpg" />
+    <Content Include="images\best-selling\top\A-1132.jpg" />
+    <Content Include="images\best-selling\top\A-1190.jpg" />
+    <Content Include="images\best-selling\top\A-1192.jpg" />
+    <Content Include="images\best-selling\top\IMG_0615.JPG" />
+    <Content Include="images\best-selling\top\IMG_0616.JPG" />
+    <Content Include="images\best-selling\top\IMG_8757.jpg" />
+    <Content Include="images\bg.png" />
+    <Content Include="images\footer-logo.png" />
+    <Content Include="images\march\bottom\A-1024.jpg" />
+    <Content Include="images\march\bottom\A-1025.jpg" />
+    <Content Include="images\march\bottom\A-1026.jpg" />
+    <Content Include="images\march\bottom\A-1100.jpg" />
+    <Content Include="images\march\bottom\A-1101.jpg" />
+    <Content Include="images\march\bottom\A-1133.jpg" />
+    <Content Include="images\march\bottom\A-1134.jpg" />
+    <Content Include="images\march\bottom\A-1135.jpg" />
+    <Content Include="images\march\bottom\A-1215.jpg" />
+    <Content Include="images\march\bottom\A-1216.jpg" />
+    <Content Include="images\march\bottom\A-1217.jpg" />
+    <Content Include="images\march\bottom\A-1218.jpg" />
+    <Content Include="images\march\bottom\A-1219.jpg" />
+    <Content Include="images\march\bottom\A-1220.jpg" />
+    <Content Include="images\march\bottom\A-1221.jpg" />
+    <Content Include="images\march\bottom\IMG_0658.PNG" />
+    <Content Include="images\march\bottom\IMG_0670.JPG" />
+    <Content Include="images\march\bottom\IMG_0671.JPG" />
+    <Content Include="images\march\bottom\IMG_0672.JPG" />
+    <Content Include="images\march\bottom\IMG_8204.jpg" />
+    <Content Include="images\march\bottom\IMG_9609.JPG" />
+    <Content Include="images\march\bottom\IMG_9610.JPG" />
+    <Content Include="images\march\bottom\IMG_9611.JPG" />
+    <Content Include="images\march\set\A-1038.jpg" />
+    <Content Include="images\march\set\A-1039.jpg" />
+    <Content Include="images\march\set\A-1040.jpg" />
+    <Content Include="images\march\set\A-1175.jpg" />
+    <Content Include="images\march\set\A-1176.jpg" />
+    <Content Include="images\march\set\A-1177.jpg" />
+    <Content Include="images\march\set\A-1178.jpg" />
+    <Content Include="images\march\set\Copy of A-1001%281%29.jpg" />
+    <Content Include="images\march\set\Copy of A-1001.jpg" />
+    <Content Include="images\march\top\A-1002.jpg" />
+    <Content Include="images\march\top\A-1003.jpg" />
+    <Content Include="images\march\top\A-1004.jpg" />
+    <Content Include="images\march\top\A-1005.jpg" />
+    <Content Include="images\march\top\A-1006.jpg" />
+    <Content Include="images\march\top\A-1007.jpg" />
+    <Content Include="images\march\top\A-1008.jpg" />
+    <Content Include="images\march\top\A-1010.jpg" />
+    <Content Include="images\march\top\A-1114.jpg" />
+    <Content Include="images\march\top\A-1116.jpg" />
+    <Content Include="images\march\top\A-1117.jpg" />
+    <Content Include="images\march\top\A-1118.jpg" />
+    <Content Include="images\march\top\A-1119.jpg" />
+    <Content Include="images\march\top\A-1120.jpg" />
+    <Content Include="images\march\top\A-1121.jpg" />
+    <Content Include="images\march\top\A-1122.jpg" />
+    <Content Include="images\march\top\A-1125.jpg" />
+    <Content Include="images\march\top\A-1128.jpg" />
+    <Content Include="images\march\top\A-1129.jpg" />
+    <Content Include="images\march\top\A-1130.jpg" />
+    <Content Include="images\march\top\A-1131.jpg" />
+    <Content Include="images\march\top\A-1132.jpg" />
+    <Content Include="images\march\top\A-1179.jpg" />
+    <Content Include="images\march\top\A-1180.jpg" />
+    <Content Include="images\march\top\A-1181.jpg" />
+    <Content Include="images\march\top\A-1182.jpg" />
+    <Content Include="images\march\top\A-1183.jpg" />
+    <Content Include="images\march\top\A-1188.jpg" />
+    <Content Include="images\march\top\A-1190.jpg" />
+    <Content Include="images\march\top\A-1191.jpg" />
+    <Content Include="images\march\top\A-1192.jpg" />
+    <Content Include="images\march\top\A-1194.jpg" />
+    <Content Include="images\march\top\A-1195.jpg" />
+    <Content Include="images\march\top\A-1196.jpg" />
+    <Content Include="images\march\top\A-1197.jpg" />
+    <Content Include="images\march\top\A-1198.jpg" />
+    <Content Include="images\march\top\A-1199.jpg" />
+    <Content Include="images\march\top\A-1200.jpg" />
+    <Content Include="images\march\top\A-1201.jpg" />
+    <Content Include="images\march\top\A-1202.jpg" />
+    <Content Include="images\march\top\A-1203.jpg" />
+    <Content Include="images\march\top\A-1204.jpg" />
+    <Content Include="images\march\top\A-1205.jpg" />
+    <Content Include="images\march\top\A-1206.jpg" />
+    <Content Include="images\march\top\IMG_0612%281%29.JPG" />
+    <Content Include="images\march\top\IMG_0612.JPG" />
+    <Content Include="images\march\top\IMG_0614.JPG" />
+    <Content Include="images\march\top\IMG_0615.JPG" />
+    <Content Include="images\march\top\IMG_0616.JPG" />
+    <Content Include="images\march\top\IMG_0619.JPG" />
+    <Content Include="images\march\top\IMG_0620.JPG" />
+    <Content Include="images\march\top\IMG_0621.JPG" />
+    <Content Include="images\march\top\IMG_0650.JPG" />
+    <Content Include="images\march\top\IMG_0651.JPG" />
+    <Content Include="images\march\top\IMG_0652.JPG" />
+    <Content Include="images\march\top\IMG_6637.jpg" />
+    <Content Include="images\march\top\IMG_6643.jpg" />
+    <Content Include="images\march\top\IMG_8757.jpg" />
+    <Content Include="images\march\top\IMG_8815.jpg" />
+    <Content Include="images\new-arrivals\product-photo\A-1013.jpg" />
+    <Content Include="images\new-arrivals\product-photo\A-1016.jpg" />
+    <Content Include="images\new-arrivals\product-photo\A-1017.jpg" />
+    <Content Include="images\new-arrivals\product-photo\A-1018.jpg" />
+    <Content Include="images\new-arrivals\product-photo\IMG_1019.JPG" />
+    <Content Include="images\new-arrivals\product-photo\IMG_1024.JPG" />
+    <Content Include="images\new-arrivals\product-photo\IMG_2884.JPG" />
+    <Content Include="images\new-arrivals\product-photo\IMG_2887.JPG" />
+    <Content Include="images\new-arrivals\product-photo\IMG_2894.JPG" />
+    <Content Include="images\new-arrivals\top\A-1007.jpg" />
+    <Content Include="images\new-arrivals\top\A-1008.jpg" />
+    <Content Include="images\new-arrivals\top\A-1009.jpg" />
+    <Content Include="images\new-arrivals\top\A-1010.jpg" />
+    <Content Include="images\new-arrivals\top\A-1011.jpg" />
+    <Content Include="images\new-arrivals\top\A-1012.jpg" />
+    <Content Include="images\new-arrivals\top\IMG_1020.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_1021.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_1022.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_1023.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_2875.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_2876.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_2885.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_2886.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_2891.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_2892.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_2893.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_3186.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_3187.JPG" />
+    <Content Include="images\new-arrivals\top\IMG_3188.JPG" />
+    <Content Include="images\payment-method.png" />
+    <Content Include="images\slide_1.png" />
+    <Content Include="images\slide_2.png" />
+    <Content Include="images\slide_3.png" />
+    <Content Include="images\small-logo.png" />
+    <Content Include="images\white-panel.png" />
+    <Content Include="main.js" />
+    <Content Include="resources\bs5\css\bootstrap-grid.css" />
+    <Content Include="resources\bs5\css\bootstrap-grid.min.css" />
+    <Content Include="resources\bs5\css\bootstrap-grid.rtl.css" />
+    <Content Include="resources\bs5\css\bootstrap-grid.rtl.min.css" />
+    <Content Include="resources\bs5\css\bootstrap-reboot.css" />
+    <Content Include="resources\bs5\css\bootstrap-reboot.min.css" />
+    <Content Include="resources\bs5\css\bootstrap-reboot.rtl.css" />
+    <Content Include="resources\bs5\css\bootstrap-reboot.rtl.min.css" />
+    <Content Include="resources\bs5\css\bootstrap-utilities.css" />
+    <Content Include="resources\bs5\css\bootstrap-utilities.min.css" />
+    <Content Include="resources\bs5\css\bootstrap-utilities.rtl.css" />
+    <Content Include="resources\bs5\css\bootstrap-utilities.rtl.min.css" />
+    <Content Include="resources\bs5\css\bootstrap.css" />
+    <Content Include="resources\bs5\css\bootstrap.min.css" />
+    <Content Include="resources\bs5\css\bootstrap.rtl.css" />
+    <Content Include="resources\bs5\css\bootstrap.rtl.min.css" />
+    <Content Include="resources\bs5\js\bootstrap.bundle.js" />
+    <Content Include="resources\bs5\js\bootstrap.bundle.min.js" />
+    <Content Include="resources\bs5\js\bootstrap.esm.js" />
+    <Content Include="resources\bs5\js\bootstrap.esm.min.js" />
+    <Content Include="resources\bs5\js\bootstrap.js" />
+    <Content Include="resources\bs5\js\bootstrap.min.js" />
+    <Content Include="resources\font-awesome\css\font-awesome.css" />
+    <Content Include="resources\font-awesome\css\font-awesome.min.css" />
+    <Content Include="resources\font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="resources\font-awesome\HELP-US-OUT.txt" />
+    <Content Include="resources\style.css" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="Site1.Master" />
+    <Content Include="resources\bs5\css\bootstrap-grid.css.map" />
+    <Content Include="resources\bs5\css\bootstrap-grid.min.css.map" />
+    <Content Include="resources\bs5\css\bootstrap-grid.rtl.css.map" />
+    <Content Include="resources\bs5\css\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="resources\bs5\css\bootstrap-reboot.css.map" />
+    <Content Include="resources\bs5\css\bootstrap-reboot.min.css.map" />
+    <Content Include="resources\bs5\css\bootstrap-reboot.rtl.css.map" />
+    <Content Include="resources\bs5\css\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="resources\bs5\css\bootstrap-utilities.css.map" />
+    <Content Include="resources\bs5\css\bootstrap-utilities.min.css.map" />
+    <Content Include="resources\bs5\css\bootstrap-utilities.rtl.css.map" />
+    <Content Include="resources\bs5\css\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="resources\bs5\css\bootstrap.css.map" />
+    <Content Include="resources\bs5\css\bootstrap.min.css.map" />
+    <Content Include="resources\bs5\css\bootstrap.rtl.css.map" />
+    <Content Include="resources\bs5\css\bootstrap.rtl.min.css.map" />
+    <Content Include="resources\bs5\js\bootstrap.bundle.js.map" />
+    <Content Include="resources\bs5\js\bootstrap.bundle.min.js.map" />
+    <Content Include="resources\bs5\js\bootstrap.esm.js.map" />
+    <Content Include="resources\bs5\js\bootstrap.esm.min.js.map" />
+    <Content Include="resources\bs5\js\bootstrap.js.map" />
+    <Content Include="resources\bs5\js\bootstrap.min.js.map" />
+    <Content Include="resources\font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="resources\font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="resources\font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="resources\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="resources\font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="resources\font-awesome\less\animated.less" />
+    <Content Include="resources\font-awesome\less\bordered-pulled.less" />
+    <Content Include="resources\font-awesome\less\core.less" />
+    <Content Include="resources\font-awesome\less\fixed-width.less" />
+    <Content Include="resources\font-awesome\less\font-awesome.less" />
+    <Content Include="resources\font-awesome\less\icons.less" />
+    <Content Include="resources\font-awesome\less\larger.less" />
+    <Content Include="resources\font-awesome\less\list.less" />
+    <Content Include="resources\font-awesome\less\mixins.less" />
+    <Content Include="resources\font-awesome\less\path.less" />
+    <Content Include="resources\font-awesome\less\rotated-flipped.less" />
+    <Content Include="resources\font-awesome\less\screen-reader.less" />
+    <Content Include="resources\font-awesome\less\stacked.less" />
+    <Content Include="resources\font-awesome\less\variables.less" />
+    <Content Include="resources\font-awesome\scss\font-awesome.scss" />
+    <Content Include="resources\font-awesome\scss\_animated.scss" />
+    <Content Include="resources\font-awesome\scss\_bordered-pulled.scss" />
+    <Content Include="resources\font-awesome\scss\_core.scss" />
+    <Content Include="resources\font-awesome\scss\_fixed-width.scss" />
+    <Content Include="resources\font-awesome\scss\_icons.scss" />
+    <Content Include="resources\font-awesome\scss\_larger.scss" />
+    <Content Include="resources\font-awesome\scss\_list.scss" />
+    <Content Include="resources\font-awesome\scss\_mixins.scss" />
+    <Content Include="resources\font-awesome\scss\_path.scss" />
+    <Content Include="resources\font-awesome\scss\_rotated-flipped.scss" />
+    <Content Include="resources\font-awesome\scss\_screen-reader.scss" />
+    <Content Include="resources\font-awesome\scss\_stacked.scss" />
+    <Content Include="resources\font-awesome\scss\_variables.scss" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52969</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44323/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
