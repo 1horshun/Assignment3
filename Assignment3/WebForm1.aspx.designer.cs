@@ -267,18 +267,22 @@ namespace Assignment3
         protected global::System.Web.UI.WebControls.Button Button4;
 
         /// <summary>
+        /// Image9 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image9;
 
         /// <summary>
+        /// Image10 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image10;
 
         /// <summary>
         /// Label17 control.
@@ -326,18 +330,22 @@ namespace Assignment3
         protected global::System.Web.UI.WebControls.Button Button5;
 
         /// <summary>
+        /// Image11 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image11;
 
         /// <summary>
+        /// Image12 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image12;
 
         /// <summary>
         /// Label21 control.
@@ -385,18 +393,22 @@ namespace Assignment3
         protected global::System.Web.UI.WebControls.Button Button6;
 
         /// <summary>
+        /// Image13 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image13;
 
         /// <summary>
+        /// Image14 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image14;
 
         /// <summary>
         /// Label25 control.
@@ -444,11 +456,22 @@ namespace Assignment3
         protected global::System.Web.UI.WebControls.Button Button7;
 
         /// <summary>
+        /// Image15 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image15;
+
+        /// <summary>
+        /// Image16 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image16;
 
         /// <summary>
         /// Label29 control.
@@ -496,11 +519,22 @@ namespace Assignment3
         protected global::System.Web.UI.WebControls.Button Button8;
 
         /// <summary>
+        /// Image17 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image17;
+
+        /// <summary>
+        /// Image18 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image18;
 
         /// <summary>
         /// Label33 control.
@@ -548,11 +582,22 @@ namespace Assignment3
         protected global::System.Web.UI.WebControls.Button Button9;
 
         /// <summary>
+        /// Image19 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image19;
+
+        /// <summary>
+        /// Image20 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image20;
 
         /// <summary>
         /// Label37 control.
@@ -600,11 +645,22 @@ namespace Assignment3
         protected global::System.Web.UI.WebControls.Button Button10;
 
         /// <summary>
+        /// Image21 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image21;
+
+        /// <summary>
+        /// Image22 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image22;
 
         /// <summary>
         /// Label41 control.
@@ -652,11 +708,22 @@ namespace Assignment3
         protected global::System.Web.UI.WebControls.Button Button11;
 
         /// <summary>
+        /// Image23 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image23;
+
+        /// <summary>
+        /// Image24 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Image Image24;
 
         /// <summary>
         /// Label45 control.
