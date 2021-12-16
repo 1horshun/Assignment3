@@ -7,10 +7,9 @@
             <div class="col-md-12 mx-auto">
                 <div class="card">
                     <div class="card-body">
-                        <div class="row">
-                            <asp:Label ID="Label1" runat="server" Text="Sign Up Form" CssClass="title-text"></asp:Label>
+                        <div class="row-title">
+                            <asp:Label ID="Label1" runat="server" Text="Sign Up Form"></asp:Label>
                         </div>
-                        <br />
                         <div class="row">
                             <div class="col">
                                 <center>
