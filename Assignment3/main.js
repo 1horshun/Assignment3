@@ -10,3 +10,4 @@ function hideSearch()
 {
    document.querySelector('.overlaySearch').style.display = "none";
 }
+
