@@ -1047,7 +1047,7 @@ h1, h2, h3, h4, h5, g6
    SHOPPING CART
 ========================================*/
 
-.table.shopping-summary
+.shopping-summary
 {
 	background: #fff;
 }
@@ -1057,18 +1057,14 @@ h1, h2, h3, h4, h5, g6
 	padding: 50px 0;
 }
 
-.shopping-summary thead .main-heading
+.shopping-summary .main-heading
 {
 	padding: 0 50px;
-}
-
-.shopping-summary thead
-{
 	background: #00adb5;
 	color: #fff;
 }
 
-.shopping-summary thead tr th
+.shopping-summary .th
 {
 	border: none;
 	font-weight: 600;
@@ -1076,166 +1072,17 @@ h1, h2, h3, h4, h5, g6
 	text-align: center;
 }
 
-.shopping-summary .main-heading .name
+.shopping-summary .name
 {
 	position: absolute;
-  	width: 38%;
-  	left: 0;
+	width: 38%;
+	left: 0;
 }
 
-.shopping-summary tbody tr
-{
-	border-bottom: 1px solide #00adb5;
-	margin-top: 20px;
-}
-
-.shopping-summary tbody tr img
-{
-	border-radius: 0;
-	width: 80px;
-	height: 80px;
-}
-
-.shopping-summary tbody tr:last-child
-{
-	border: none;
-}
-
-.shopping-summary tbody .product-name a
-{
-	font-weight: 600;
-	color: #393e46;
-	font-weight: 600;
-	font-size: 17px;
-}
-
-.shopping-cart .table p
-{
-	font-size: 14px;
-	color: #666;
-}
-
-.shopping-summary tbody .product-name a:hover
-{
-	color: #00adb5;
-}
-
-.shopping-summary tbody .product img
-{
-	max-width: 70px;
-	border-radius: 100%;
-	max-height: 65px;
-	border: 1px solid #eeeeee;
-	padding: 4px;
-}
-
-.shopping-cart .table .remove-icon-first
+.shopping-cart .remove-icon-first
 {
 	font-size: 16px;
 	color: #fff;
-}
-
-.shopping-cart .table .remove-icon
-{
-	font-size: 16px;
-	color: #393e46;
-}
-
-.shopping-cart .table .remove-icon:hover
-{
-	font-size: 16px;
-	color: #00adb5;
-}
-
-.shopping-cart .table td
-{
-	vertical-align: middle;
-	border-top: 1px solid #eeeeee;
-	padding: 30px;
-}
-
-.shopping-summary tbody .price
-{
-	text-align: center;
-}
-
-.shopping-cart tbody .qty .input-group
-{
-	width: 175px;
-	display: inline-block;
-	margin-left: 65px;
-}
-
-.shopping-cart tbody .qty .button
-{
-	display: inline-block;
-	position: absolute;
-	top: 0;
-}
-
-.shopping-cart .qty .button.minus
-{
-	left: 0;
-	border-radius: 0;
-	overflow: hidden;
-}
-
-.shopping-cart .qty .button.minus
-{
-	left: 0;
-	border-radius: 0;
-	overflow: hidden;
-}
-
-.shopping-cart .qty .button.plus
-{
-	right: 0;
-	border-radius: 0;
-	overflow: hidden;
-}
-
-.shopping-cart .qty .btn
-{
-	padding: 0;
-	width: 44px;
-	height: 47px;
-	line-height: 50px;
-	border-radius: 0px;
-	background: transparent;
-	color: #393e46;
-	border: none;
-	font-size: 12px;
-}
-
-.shopping-cart .qty .button .btn:hover
-{
-	color: #00adb5;
-}
-
-.shopping-cart .qty .input-number
-{
-	border: 1px solid #eeeeee;
-	width: 100%;
-	text-align: center;
-	height: 47px;
-	border-radius: 0;
-	overflow: hidden;
-	padding: 0 45px;
-}
-
-.shopping-summary tbody .total-amount
-{
-	text-align: center;
-}
-
-.shopping-summary tbody .action
-{
-	text-align: center;
-}
-
-.shopping-summary tbody .action a:hover
-{
-	color: #00adb5;
 }
 
 .shopping-cart .total-amount
@@ -1272,7 +1119,7 @@ h1, h2, h3, h4, h5, g6
 	float: right;
 }
 
-.shopping-cart .total-amount .right .cartBtn .btn
+.shopping-cart .total-amount .right .cartBtn .btn 
 {
 	text-align: center;
 	justify-content: center;
@@ -1283,16 +1130,18 @@ h1, h2, h3, h4, h5, g6
 	line-height: 36px;
 	font-size: 16px;
 	font-weight: 500;
+	border-color: #393e46;
 	background-color: #393e46;
 	color: #fff;
+	outline: none;
 }
 
 .shopping-cart .total-amount .right .cartBtn .btn:hover
 {
 	background-color: #00adb5;
 	color: #fff;
+	border: none;
 }
-
 
 /*======================================
    CHECKOUT FORM

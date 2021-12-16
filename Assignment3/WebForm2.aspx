@@ -14,14 +14,14 @@
                 <div class="row">
                     <div class="col-12">
                         <!-- SHOPPING SUMMARY -->
-                        <asp:Table ID="Table1" runat="server" CssClass="table shopping-shopping-summary">
+                        <asp:Table ID="Table1" runat="server" CssClass="table shopping-summary">
                             <asp:TableHeaderRow runat="server" CssClass="main-heading">
-                                <asp:TableCell runat="server">Product</asp:TableCell>
-                                <asp:TableCell runat="server" CssClass="name">Name</asp:TableCell>
-                                <asp:TableCell runat="server" CssClass="text-center">Unit Price</asp:TableCell>
-                                <asp:TableCell runat="server" CssClass="text-center">Quantity</asp:TableCell>
-                                <asp:TableCell runat="server" CssClass="text-center">Total</asp:TableCell>
-                                <asp:TableCell runat="server" CssClass="text-center">Remove</asp:TableCell>
+                                <asp:TableCell runat="server" CssClass="th">Product</asp:TableCell>
+                                <asp:TableCell runat="server" CssClass="name th">Name</asp:TableCell>
+                                <asp:TableCell runat="server" CssClass="text-center th">Unit Price</asp:TableCell>
+                                <asp:TableCell runat="server" CssClass="text-center th">Quantity</asp:TableCell>
+                                <asp:TableCell runat="server" CssClass="text-center th">Total</asp:TableCell>
+                                <asp:TableCell runat="server" CssClass="text-center th"><i class = "fa fa-trash remove-icon-first"></asp:TableCell>
                             </asp:TableHeaderRow>
 
                             <asp:TableRow runat="server">
