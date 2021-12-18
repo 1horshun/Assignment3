@@ -1048,10 +1048,9 @@ h1, h2, h3, h4, h5, g6
 }
 
 /*======================================
-   CHECKOUT FORM
+   CHECKOUT
 ========================================*/
-
-.shop.checkout
+.checkout
 {
 	padding: 0;
 	background: #fff;
@@ -1059,12 +1058,12 @@ h1, h2, h3, h4, h5, g6
 	padding-bottom: 50px;
 }
 
-.shop.checkout .checkout-form
+.checkout .checkout-form
 {
 	margin-top: 30px;
 }
 
-.shop.checkout .checkout-form h2
+.checkout .checkout-form h2
 {
 	font-size: 25px;
 	color: #393e46;
@@ -1072,7 +1071,7 @@ h1, h2, h3, h4, h5, g6
 	line-height: 27px;
 }
 
-.shop.checkout .checkout-form p
+.checkout .checkout-form p
 {
 	font-size: 16px;
 	color: #393e46;
@@ -1081,28 +1080,18 @@ h1, h2, h3, h4, h5, g6
 	margin-bottom: 30px;
 }
 
-.shop.checkout .form .form-group
+.checkout .panel-body .form-group
 {
 	margin-bottom: 25px;
 }
 
-.shop.checkout .form .form-group label
+.checkout .panel-body .form-group text-label
 {
 	color: #393e46;
 	position: relative;
 }
 
-.shop.checkout .form .form-group label span
-{
-	color: #ff2c18;
-	display: inline-block;
-	position: absolute;
-	right: -12px;
-	top: 4px;
-	font-size: 16px;
-}
-
-.shop.checkout .form .form-group input
+.checkout .panel-body .form-group input-sm
 {
 	width: 100%;
 	height: 45px;
@@ -1114,35 +1103,20 @@ h1, h2, h3, h4, h5, g6
 	background: #f6f7fb;
 }
 
-.shop.checkout .form .address input
-{
-	margin-bottom: 15px;
-}
-
-.shop.checkout .form .address input:last-child
-{
-	margin: 0;
-}
-
-.shop.checkout .order-details
+.checkout .order-details
 {
 	margin-top: 30px;
 	background: #fff;
-	padding: 15px 0 30px 0;
+	padding: 40px;
 	border: 1px solid #eeeeee;
 }
 
-.shop.checkout .single-widget
+.checkout .order-details .single-widget
 {
 	margin-bottom: 30px;
 }
 
-.shop.checkout .single-widget:last-child
-{
-	margin: 0;
-}
-.shop.checkout .single-widget h2
-{
+.shop.checkout .single-widget h2 {
 	position: relative;
 	font-size: 15px;
 	font-weight: 600;
@@ -1153,8 +1127,7 @@ h1, h2, h3, h4, h5, g6
 	padding-bottom: 5px;
 }
 
-.shop.checkout .single-widget h2:before
-{
+.checkout .order-details .single-widget h2:before {
 	position: absolute;
 	content: "";
 	left: 30px;
@@ -1164,14 +1137,12 @@ h1, h2, h3, h4, h5, g6
 	background: #00adb5;
 }
 
-.shop.checkout .single-widget .content ul
-{
+.checkout .order-details .single-widget .content ul {
 	margin-top: 30px;
 	margin-right: 30px;
 }
 
-.shop.checkout .single-widget .content ul li
-{
+.checkout .order-details .single-widget .content ul li {
 	display: block;
 	font-size: 15px;
 	font-weight: 400;
@@ -1181,14 +1152,12 @@ h1, h2, h3, h4, h5, g6
 	padding-left: 0;
 }
 
-.shop.checkout .single-widget .content ul li span
-{
+.checkout .order-details .single-widget .content ul li span {
 	display: inline-block;
 	float: right;
 }
 
-.shop.checkout .single-widget .content ul li.last
-{
+.checkout .order-details .single-widget .content ul li.last {
 	padding-top: 12px;
 	border-top: 1px solid #ebebeb;
 	display: block;
@@ -1197,19 +1166,18 @@ h1, h2, h3, h4, h5, g6
 	color: #393e46;
 }
 
-.shop.checkout .single-widget .checkbox
-{
+.checkout .single-widget .option {
 	text-align: left;
-	margin: 0;
+	margin-right: 60px;
 	padding: 0 30px 10px 30px;
 }
 
-.shop.checkout .single-widget .checkbox input[type = "checkbox"]
+.checkout .single-widget .option input[type = "radio"]
 {
-	opacity: 0;
+		opacity: 0;
 }
 
-.shop.checkout .single-widget .checkbox label
+.checkout .single-widget .option label
 {
 	position: relative;
 	display: inline-block;
@@ -1218,16 +1186,15 @@ h1, h2, h3, h4, h5, g6
 	color: #555555;
 }
 
-.shop.checkout .single-widget .checkbox label::before,
-.shop.checkout .single-widget .checkbox label::after
-{
+.checkout .single-widget .option label::before,
+.checkout .single-widget .option label::after {
 	position: absolute;
 	content: "";
 	display: inline-block;
+	margin-right: 30px;
 }
 
-.shop.checkout .single-widget .checkbox label::before
-{
+.checkout .single-widget .option label::before {
 	height: 16px;
 	width: 16px;
 	border: 1px solid #393e46;
@@ -1235,8 +1202,7 @@ h1, h2, h3, h4, h5, g6
 	top: 3px;
 }
 
-.shop.checkout .single-widget .checkbox label::after
-{
+.checkout .single-widget .option label::after {
 	height: 5px;
 	width: 9px;
 	border-left: 2px solid;
@@ -1246,36 +1212,24 @@ h1, h2, h3, h4, h5, g6
 	top: 7px;
 }
 
-.shop.checkout .single-widget .checkbox input[type = "checkbox"] + label::after
-{
+.checkout .single-widget .option input[type = "radio"] + label::after {
 	content: none;
 }
 
-.shop.checkout .single-widget .checkbox input[type = "checkbox"]:checked + label::after
-{
+.checkout .single-widget .option input[type = "radio"]:checked + label::after {
 	content: "";
 }
 
-.shop.checkout .single-widget .checkbox input[type = "checkbox"]:focus + label::before
-{
-	outline: #00adb5 auto 5px;
-}
+.checkout .single-widget .option input[type = "radio"]:focus + label::before {
+		outline: #00adb5 auto 5px;
+	}
 
-.shop.checkout .single-widget.payment
-{
-	padding: 0 38px;
-	text-align: center;
-	margin-top: 30px;
-}
-
-.shop.checkout .single-widget.get-button
-{
+.checkout .order-details .single-widget .get-button {
 	text-align: center;
 	padding: 0 35px;
 }
 
-.shop.checkout .single-widget.get-button .btn
-{
+.checkout .order-details .single-widget .get-button .button {
 	height: 46px;
 	width: 100%;
 	line-height: 30px;
@@ -1288,25 +1242,22 @@ h1, h2, h3, h4, h5, g6
 	color: #fff;
 }
 
-.shop.checkout .single-widget.get-button .btn:hover
-{
+.checkout .order-details .single-widget .get-button .button:hover {
 	background-color: #00adb5;
 	color: #fff;
+	border: none;
 }
-
 
 /*======================================
    CONTACT US
 ========================================*/
-
-/*Contact Form*/
 .contact-us
 {
 	width: 100%;
 	height: 700px;
 }
 
-.contact-us title
+.contact-us .title
 {
 	margin-bottom: 30px;
 }
@@ -1324,15 +1275,15 @@ h1, h2, h3, h4, h5, g6
 	font-size: 25px;
 	text-transform: uppercase;
 	font-weight: 600;
+	margin-bottom: -30px;
 }
 
-.contact-us .form-main
-{
-	box-shadow: 0 0 15px #0000001a;
+.contact-us .form-main {
+	box-shadow: 0 0 15px #e6e2f5;
 	padding: 50px;
 }
 
-.contact-us .form .form-group input
+.contact-us .form-group input[type="text"]
 {
 	height: 48px;
 	line-height: 48px;
@@ -1342,147 +1293,34 @@ h1, h2, h3, h4, h5, g6
 	color: #333;
 	border-radius: 0px;
 	font-weight: 400;
+	margin-bottom: 25px;
 }
 
-.contact-us .form .form-group textarea
-{
-	height: 180px;
-	width: 100%;
-	border: 1px solid #e6e2f5;
-	padding: 15px 20px;
-	color: #333;
-	border-radius: 0px;
-	resize: none;
-	font-weight: 400;
-}
-
-.contact-us .form .form-group label
+.contact-us .form-group label
 {
 	color: #393e46;
 	position: relative;
 }
 
-.contact-us .form .form-group label span
+.contact-us .contact-form .button
 {
-	color: #ff2c18;
-	display: inline-block;
-	position: absolute;
-	right: -12px;
-	top: 4px;
-	font-size: 16px;
+	margin-top: 20px;
 }
 
-.contact-us .form .button
+.contact-us .contact-form .button .btn
 {
-	margin: 0;
-}
-
-.contact-us .form .button .btn
-{
-	height: 50px;
 	border: none;
 	background-color: #00adb5;
+	padding: 10px;
 	color: #fff;
+	font-weight: 500;
 }
 
-.contact-us .form .button .btn:hover
+.contact-us .contact-form .button .btn:hover
 {
 	background-color: #393e46;
 	color: #fff;
 }
-
-/*Newsletter*/
-.shop-newsletter
-{
-	background: #fff;
-}
-
-.shop-newsletter .inner
-{
-	text-align: center;
-}
-
-.shop-newsletter .inner h4
-{
-	color: #393e46;
-	font-size: 17px;
-	font-weight: 600;
-	margin-bottom: 5px;
-	text-transform: uppercase;
-}
-
-.shop-newsletter .inner p
-{
-	color: #777;
-	font-size: 14px;
-	font-weight: 400;
-	margin-bottom: 30px;
-}
-
-.shop-newsletter .inner p span
-{
-	color: #00adb5;
-}
-
-.shop-newsletter .newsletter-inner
-{
-	position: relative;
-	display: inline-block;
-}
-
-.shop-newsletter .newsletter-inner input
-{
-	width: 480px;
-	height: 55px;
-	border-radius: 0px;
-	padding: 0 30px;
-	font-weight: 400;
-	display: inline-block;
-	text-shadow: none;
-	box-shadow: none;
-	border-radius: 0;
-	border: none;
-	border: 1px solid #d1d1d1;
-	border-radius: 30px 0 0 30px;
-}
-
-.shop-newsletter .newsletter-inner input:hover
-{
-	color: #393e46;
-	background-color: #eeeeee;
-}
-
-.shop-newsletter .newsletter-inner button
-{
-	border: none;
-	text-shadow: none;
-	box-shadow: none;
-	border-radius: 0;
-}
-
-.shop-newsletter .newsletter-inner .btn
-{
-	display: inline-block;
-	height: 55px;
-	padding: 0 30px;
-	position: relative;
-	margin-bottom: 2px;
-	top: 0;
-	background: #00adb5;
-	color: #fff;
-	left: -4px;
-	border-radius: 0 30px 30px 0;
-	font-size: 14px;
-	font-weight: 500;
-	text-transform: uppercase;
-}
-
-.shop-newsletter .newsletter-inner .btn:hover
-{
-	background: #393e46;
-	color: #fff;
-}
-
 
 /*======================================
    PRODUCT ITEM

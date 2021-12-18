@@ -39,7 +39,6 @@
                     <br />
                 </div>
                 <asp:Label CssClass="product-price" ID="Label2" runat="server" Text="RM35 | "></asp:Label>
-                <asp:Label CssClass="product-size" ID="Label3" runat="server" Text="S, M, L | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label4" runat="server" Text="White"></asp:Label>
             </div>
             <div class="button">
@@ -61,7 +60,6 @@
                     <br />
                 </div>
                 <asp:Label CssClass="product-price" ID="Label6" runat="server" Text="RM35 | "></asp:Label>
-                <asp:Label CssClass="product-size" ID="Label7" runat="server" Text="S, M, L | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label8" runat="server" Text="Black"></asp:Label>
             </div>
             <div class="button">
@@ -83,7 +81,6 @@
                     <br />
                 </div>
                 <asp:Label CssClass="product-price" ID="Label10" runat="server" Text="RM25 | "></asp:Label>
-                <asp:Label CssClass="product-size" ID="Label11" runat="server" Text="S, M, L | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label12" runat="server" Text="Grey"></asp:Label>
             </div>
             <div class="button">
@@ -106,7 +103,6 @@
                 </div>
 
                 <asp:Label CssClass="product-price" ID="Label14" runat="server" Text="RM25 | "></asp:Label>
-                <asp:Label CssClass="product-size" ID="Label15" runat="server" Text="S, M, L | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label16" runat="server" Text="White"></asp:Label>
             </div>
             <div class="button">
@@ -129,7 +125,6 @@
                 </div>
 
                 <asp:Label CssClass="product-price" ID="Label18" runat="server" Text="RM25 | "></asp:Label>
-                <asp:Label CssClass="product-size" ID="Label19" runat="server" Text="S, M, L | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label20" runat="server" Text="Beige"></asp:Label>
             </div>
             <div class="button">
@@ -151,7 +146,6 @@
                 </div>
 
                 <asp:Label CssClass="product-price" ID="Label22" runat="server" Text="RM25 | "></asp:Label>
-                <asp:Label CssClass="product-size" ID="Label23" runat="server" Text="S, M, L | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label24" runat="server" Text="Brown"></asp:Label>
             </div>
             <div class="button">
@@ -173,7 +167,6 @@
                 </div>
 
                 <asp:Label CssClass="product-price" ID="Label26" runat="server" Text="RM30 | "></asp:Label>
-                <asp:Label CssClass="product-size" ID="Label27" runat="server" Text="S, M, L | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label28" runat="server" Text="Black"></asp:Label>
             </div>
             <div class="button">
@@ -195,7 +188,6 @@
                 </div>
 
                 <asp:Label CssClass="product-price" ID="Label30" runat="server" Text="RM25 | "></asp:Label>
-                <asp:Label CssClass="product-size" ID="Label31" runat="server" Text="S, M, L | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label32" runat="server" Text="Black"></asp:Label>
             </div>
             <div class="button">
@@ -217,7 +209,6 @@
                 </div>
 
                 <asp:Label CssClass="product-price" ID="Label34" runat="server" Text="RM30 | "></asp:Label>
-                <asp:Label CssClass="product-size" ID="Label35" runat="server" Text="S, M, L | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label36" runat="server" Text="Grey"></asp:Label>
             </div>
             <div class="button">
@@ -239,7 +230,6 @@
                 </div>
 
                 <asp:Label CssClass="product-price" ID="Label38" runat="server" Text="RM25 | "></asp:Label>
-                <asp:Label CssClass="product-size" ID="Label39" runat="server" Text="S, M, L | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label40" runat="server" Text="Black"></asp:Label>
             </div>
             <div class="button">
@@ -261,7 +251,6 @@
                 </div>
 
                 <asp:Label CssClass="product-price" ID="Label42" runat="server" Text="RM25 | "></asp:Label>
-                <asp:Label CssClass="product-size" ID="Label43" runat="server" Text="S, M, L | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label44" runat="server" Text="Beige"></asp:Label>
             </div>
             <div class="button">
@@ -283,7 +272,6 @@
                 </div>
 
                 <asp:Label CssClass="product-price" ID="Label46" runat="server" Text="RM30 | "></asp:Label>
-                <asp:Label CssClass="product-size" ID="Label47" runat="server" Text="S, M, L | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label48" runat="server" Text="Light"></asp:Label>
             </div>
             <div class="button">

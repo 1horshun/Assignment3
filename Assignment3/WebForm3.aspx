@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm3.aspx.cs" Inherits="Assignment3.WebForm3" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder1" runat="server">
     <!-- START CHECKOUT -->
     <div class ="shop checkout section">
@@ -69,7 +70,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg--4 col-md--4 col-12">
+                        <div class="col-lg-12 col-md-12 col-12">
                             <div class="order-details">
                                 <!-- ORDER WIDGET 1 -->
                                 <div class="single-widget">
@@ -87,21 +88,21 @@
                                 <!-- ORDER WIDGET 2 -->
                                 <div class="single-widget">
                                     <div class="payment-title"><h2>Payment</h2></div>
-                                    <div class="content">
-                                        <asp:RadioButtonList ID="RadioButtonList1" runat="server">
-                                            <asp:ListItem>Online Banking</asp:ListItem>
-                                            <asp:ListItem>Credit Card</asp:ListItem>
-                                            <asp:ListItem Value="Cash on Delivery">Cash on Delivery</asp:ListItem>
+                                    <div class="content" style="padding-left: 30px;">
+                                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" CssClass="option">
+                                            <asp:ListItem CssClass="radio">Online Banking</asp:ListItem>
+                                            <asp:ListItem CssClass="radio">Credit Card</asp:ListItem>
+                                            <asp:ListItem CssClass="radio">Cash on Delivery</asp:ListItem>
                                         </asp:RadioButtonList>
                                     </div>
                                 </div>
                                 <!-- END ORDER WIDGET 2 -->
 
                                 <!-- BUTTON WIDGET -->
-                                <div class ="single-single-widget get-button">
+                                <div class ="single-widget get-button">
                                     <div class="content">
-                                        <div class="button">
-                                            <asp:Button ID="Button1" runat="server" Text="Confirm Order" />
+                                        <div class="get-button">
+                                            <asp:Button ID="Button1" runat="server" Text="Confirm Order" CssClass="button"/>
                                         </div>
                                     </div>
                                 </div>
