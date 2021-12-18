@@ -1508,11 +1508,9 @@ h1, h2, h3, h4, h5, g6
 
 .grid-container {
 	margin: 0 auto;
-	width: 50%;
 	display: grid;
 	grid-template-columns: auto auto auto auto;
-	grid-gap: 20px;
-	padding: 2px;
+	grid-gap: 50px;
 	align-content: center;
 	justify-content: center;
 }
