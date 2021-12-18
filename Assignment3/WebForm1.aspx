@@ -26,10 +26,10 @@
         <div class="product1">
             <div class="image-box">
                 <div class="img">
-                    <asp:Image class="product-img" ID="Image1" runat="server" src="images/march/set/A-1038.jpg" />
+                    <asp:Image CssClass="product-img" ID="Image1" runat="server" src="images/march/set/A-1038.jpg" />
                 </div>
                 <div class="overlay">
-                    <asp:Image class="overlay-img" ID="Image2" runat="server" src="images/march/set/A-1040.jpg" />
+                    <asp:Image CssClass="overlay-img" ID="Image2" runat="server" src="images/march/set/A-1040.jpg" />
                 </div>
             </div>
 
@@ -49,9 +49,9 @@
 
         <div class="product2">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image3" runat="server" src="images/march/top/A-1122.jpg" />
+                <asp:Image CssClass="product-img" ID="Image3" runat="server" src="images/march/top/A-1122.jpg" />
                 <div class="overlay">
-                    <asp:Image class="overlay-img" ID="Image4" runat="server" src="images/march/top/A-1120.jpg" />
+                    <asp:Image CssClass="overlay-img" ID="Image4" runat="server" src="images/march/top/A-1120.jpg" />
                 </div>
             </div>
             <div class="content">
@@ -70,9 +70,9 @@
 
         <div class="product3">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image5" runat="server" src="images/march/top/A-1128.jpg" />
+                <asp:Image CssClass="product-img" ID="Image5" runat="server" src="images/march/top/A-1128.jpg" />
                 <div class="overlay">
-                    <asp:Image class="overlay-img" ID="Image6" runat="server" src="images/march/top/A-1132.jpg" />
+                    <asp:Image CssClass="overlay-img" ID="Image6" runat="server" src="images/march/top/A-1132.jpg" />
                 </div>
             </div>
             <div class="content">
@@ -91,9 +91,9 @@
 
         <div class="product4">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image7" runat="server" src="images/march/top/A-1179.jpg" />
+                <asp:Image CssClass="product-img" ID="Image7" runat="server" src="images/march/top/A-1179.jpg" />
                 <div class="overlay">
-                    <asp:Image class="overlay-img" ID="Image8" runat="server" src="images/march/top/A-1181.jpg" />
+                    <asp:Image CssClass="overlay-img" ID="Image8" runat="server" src="images/march/top/A-1181.jpg" />
                 </div>
             </div>
             <div class="content">
@@ -113,9 +113,9 @@
 
         <div class="product5">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image9" runat="server" src="images/march/top/A-1188.jpg" />
+                <asp:Image CssClass="product-img" ID="Image9" runat="server" src="images/march/top/A-1188.jpg" />
                 <div class="overlay">
-                    <asp:Image class="overlay-img" ID="Image10" runat="server" src="images/march/top/A-1197.jpg" />
+                    <asp:Image CssClass="overlay-img" ID="Image10" runat="server" src="images/march/top/A-1197.jpg" />
                 </div>
             </div>
             <div class="content">
@@ -134,9 +134,9 @@
         </div>
         <div class="product6">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image11" runat="server" src="images/march/top/A-1190.jpg" />
+                <asp:Image CssClass="product-img" ID="Image11" runat="server" src="images/march/top/A-1190.jpg" />
                 <div class="overlay">
-                    <asp:Image class="overlay-img" ID="Image12" runat="server" src="images/march/top/A-1192.jpg" />
+                    <asp:Image CssClass="overlay-img" ID="Image12" runat="server" src="images/march/top/A-1192.jpg" />
                 </div>
             </div>
             <div class="content">
@@ -155,9 +155,9 @@
         </div>
         <div class="product7">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image13" runat="server" src="images/march/top/A-1198.jpg" />
+                <asp:Image CssClass="product-img" ID="Image13" runat="server" src="images/march/top/A-1198.jpg" />
                 <div class="overlay">
-                    <asp:Image class="overlay-img" ID="Image14" runat="server" src="images/march/top/A-1204.jpg" />
+                    <asp:Image CssClass="overlay-img" ID="Image14" runat="server" src="images/march/top/A-1204.jpg" />
                 </div>
             </div>
             <div class="content">
@@ -176,9 +176,9 @@
         </div>
         <div class="product8">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image15" runat="server" src="images/march/bottom/A-1024.jpg" />
+                <asp:Image CssClass="product-img" ID="Image15" runat="server" src="images/march/bottom/A-1024.jpg" />
                 <div class="overlay">
-                    <asp:Image class="overlay-img" ID="Image16" runat="server" src="images/march/bottom/A-1026.jpg" />
+                    <asp:Image CssClass="overlay-img" ID="Image16" runat="server" src="images/march/bottom/A-1026.jpg" />
                 </div>
             </div>
             <div class="content">
@@ -197,9 +197,9 @@
         </div>
         <div class="product9">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image17" runat="server" src="images/march/bottom/A-1100.jpg" />
+                <asp:Image CssClass="product-img" ID="Image17" runat="server" src="images/march/bottom/A-1100.jpg" />
                 <div class="overlay">
-                    <asp:Image class="overlay-img" ID="Image18" runat="server" src="images/march/bottom/A-1101.jpg" />
+                    <asp:Image CssClass="overlay-img" ID="Image18" runat="server" src="images/march/bottom/A-1101.jpg" />
                 </div>
             </div>
             <div class="content">
@@ -218,9 +218,9 @@
         </div>
         <div class="product10">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image19" runat="server" src="images/march/bottom/A-1133.jpg" />
+                <asp:Image CssClass="product-img" ID="Image19" runat="server" src="images/march/bottom/A-1133.jpg" />
                 <div class="overlay">
-                    <asp:Image class="overlay-img" ID="Image20" runat="server" src="images/march/bottom/IMG_8204.jpg" />
+                    <asp:Image CssClass="overlay-img" ID="Image20" runat="server" src="images/march/bottom/IMG_8204.jpg" />
                 </div>
             </div>
             <div class="content">
@@ -239,9 +239,9 @@
         </div>
         <div class="product11">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image21" runat="server" src="images/march/bottom/A-1215.jpg" />
+                <asp:Image CssClass="product-img" ID="Image21" runat="server" src="images/march/bottom/A-1215.jpg" />
                 <div class="overlay">
-                    <asp:Image class="overlay-img" ID="Image22" runat="server" src="images/march/bottom/A-1218.jpg" />
+                    <asp:Image CssClass="overlay-img" ID="Image22" runat="server" src="images/march/bottom/A-1218.jpg" />
                 </div>
             </div>
             <div class="content">
@@ -260,9 +260,9 @@
         </div>
         <div class="product12">
             <div class="image-box">
-                <asp:Image class="product-img" ID="Image23" runat="server" src="images/march/bottom/IMG_9610.JPG" />
+                <asp:Image CssClass="product-img" ID="Image23" runat="server" src="images/march/bottom/IMG_9610.JPG" />
                 <div class="overlay">
-                    <asp:Image class="overlay-img" ID="Image24" runat="server" src="images/march/bottom/IMG_9609.JPG" />
+                    <asp:Image CssClass="overlay-img" ID="Image24" runat="server" src="images/march/bottom/IMG_9609.JPG" />
                 </div>
             </div>
             <div class="content">

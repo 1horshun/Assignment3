@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder1" runat="server">
     <div class="content-part">
         <h2 class="section-title" style="text-align: center;">FAQs</h2>
-        <<br /><br />
+        <br /><br />
 
         <h5 style="text-align: left; padding-left: 320px;">WHAT IS THE SHIPPING FEE?</h5>
         <br />
