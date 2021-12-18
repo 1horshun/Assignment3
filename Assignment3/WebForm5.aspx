@@ -1,7 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm5.aspx.cs" Inherits="Assignment3.WebForm5" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder1" runat="server">
-
+    <script language="javascript" src="main.js"></script>
     <div class="login-signup container-fluid">
         <div class="wrapper">
             <div class="col-md-12 mx-auto">
@@ -126,7 +126,7 @@
                     </div>
                     <br />
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <asp:Button ID="Button1" runat="server" Text="Submit Details" class="btn btn-block" />
+                        <asp:Button ID="Button1" runat="server" Text="Submit Details" class="btn btn-block"/>
                         <asp:HyperLink ID="HyperLink1" runat="server" CssClass="login-link">Back to Login Page</asp:HyperLink>
                     </div>
 
