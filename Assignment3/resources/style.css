@@ -1413,10 +1413,14 @@ h1, h2, h3, h4, h5, g6
 	}
 
 .image-box {
+
 	position: relative;
 }
 
 .name-box {
+	width: 200px;
+	height: 60px;
+	border-bottom: 2px solid #00adb5;
 	position: relative;
 }
 
@@ -1466,9 +1470,11 @@ h1, h2, h3, h4, h5, g6
 .product-name {
 	font-weight: bold;
 	padding: 2px;
-	font-size: 14px;
+	line-height:1em;
+	word-wrap: break-word;
+	font-size: 16px;
 	text-transform: uppercase;
-	border-bottom: 2px solid #00adb5;
+
 }
 
 .product-price {
