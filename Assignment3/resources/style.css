@@ -1380,22 +1380,40 @@ h1, h2, h3, h4, h5, g6
 
 .product-description .product-size
 {
-	margin-top: 20px;
+	margin-top: 10px;
+}
+
+.product-description .product-quantity
+{
+	margin-top: 10px;
+}
+
+.product-description .product-quantity .input-group
+{
+	margin-top: 5px;
+}
+
+.product-description .product-quantity .input-field
+{
+	padding: 0.5rem;
+	width: 10%;
 }
 
 /*======================================
    HOME
 ========================================*/
-	.btn {
-		border: 2px solid #00adb5;
-		padding: 5px;
-	}
+.btn {
+	border: none;
+	background-color: #00adb5;
+	padding: 10px;
+	color: #fff;
+	font-weight: 400;
+}
 
-	.btn:hover {
-		background-color: #00adb5;
-		color: white;
-		border: 2px solid white;
-	}
+.btn:hover {
+	background-color: #393e46;
+	color: #fff;
+}
 
 .grid-container {
 	margin: 0 auto;

@@ -45,7 +45,18 @@
                 </div>
 
                 <div class="row">
-                    <div class="product-button" style="padding-top: 50px;">
+                    <div class="product-quantity">
+                        <span>Quantity</span>
+                        <br />
+
+                        <div class="input-group">
+                            <input class="input-field" type="number" name="quantity" value="0">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="product-button" style="padding-top: 20px;">
                         <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" style = "background-color: #00adb5; border: none; color: #fff; width: 160px; border-radius: 4px; font-size: 14px; text-decoration: none; display: inline-block; height: 50px;" onMouseOver="this.style.background='#393e46'" onMouseOut="this.style.background='#00adb5'" Text="Add to Cart" />
                     </div>
                 </div>

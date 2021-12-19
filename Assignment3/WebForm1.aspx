@@ -28,6 +28,8 @@
 		</div>
     </div>
 
+    <br />
+
     <div class="grid-container">
         <div class="product1">
             <div class="image-box">
@@ -44,12 +46,12 @@
                     <asp:Label CssClass="product-name" ID="Label1" runat="server" Text="Two Pieces Plaid Top & Skirt"></asp:Label>
                     <br />
                 </div>
-                <asp:Label CssClass="product-price" ID="Label2" runat="server" Text="RM59 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label2" runat="server" Text="RM59&nbsp; | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label4" runat="server" Text="Beige"></asp:Label>
             </div>
             <div class="button">
                 <br />
-                <asp:Button CssClass="btn" ID="Button1" runat="server" Text="Add to Cart" />
+                <asp:Button CssClass="btn" ID="Button1" runat="server" Text="View Product" />
             </div>
         </div>
 
@@ -65,12 +67,12 @@
                     <asp:Label CssClass="product-name" ID="Label5" runat="server" Text="Classic Oversized Crop Blazer"></asp:Label>
                     <br />
                 </div>
-                <asp:Label CssClass="product-price" ID="Label6" runat="server" Text="RM40 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label6" runat="server" Text="RM40&nbsp; | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label8" runat="server" Text="Black"></asp:Label>
             </div>
             <div class="button">
                 <br />
-                <asp:Button CssClass="btn" ID="Button2" runat="server" Text="Add to Cart" />
+                <asp:Button CssClass="btn" ID="Button2" runat="server" Text="View Product" />
             </div>
         </div>
 
@@ -86,12 +88,12 @@
                     <asp:Label CssClass="product-name" ID="Label9" runat="server" Text="Knitted Wool Sweater"></asp:Label>
                     <br />
                 </div>
-                <asp:Label CssClass="product-price" ID="Label10" runat="server" Text="RM35 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label10" runat="server" Text="RM35&nbsp; | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label12" runat="server" Text="Light Blue"></asp:Label>
             </div>
             <div class="button">
                 <br />
-                <asp:Button CssClass="btn" ID="Button3" runat="server" Text="Add to Cart" />
+                <asp:Button CssClass="btn" ID="Button3" runat="server" Text="View Product" />
             </div>
         </div>
 
@@ -108,12 +110,12 @@
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label14" runat="server" Text="RM25 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label14" runat="server" Text="RM25&nbsp; | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label16" runat="server" Text="White"></asp:Label>
             </div>
             <div class="button">
                 <br />
-                <asp:Button CssClass="btn" ID="Button4" runat="server" Text="Add to Cart" />
+                <asp:Button CssClass="btn" ID="Button4" runat="server" Text="View Product" />
             </div>
         </div>
 
@@ -130,12 +132,12 @@
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label18" runat="server" Text="RM29 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label18" runat="server" Text="RM29&nbsp; | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label20" runat="server" Text="Beige"></asp:Label>
             </div>
             <div class="button">
                 <br />
-                <asp:Button CssClass="btn" ID="Button5" runat="server" Text="Add to Cart" />
+                <asp:Button CssClass="btn" ID="Button5" runat="server" Text="View Product" />
             </div>
         </div>
         <div class="product6">
@@ -151,12 +153,12 @@
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label22" runat="server" Text="RM29 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label22" runat="server" Text="RM29&nbsp; | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label24" runat="server" Text="Brown"></asp:Label>
             </div>
             <div class="button">
                 <br />
-                <asp:Button CssClass="btn" ID="Button6" runat="server" Text="Add to Cart" />
+                <asp:Button CssClass="btn" ID="Button6" runat="server" Text="View Product" />
             </div>
         </div>
         <div class="product7">
@@ -172,12 +174,12 @@
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label26" runat="server" Text="RM28 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label26" runat="server" Text="RM28&nbsp; | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label28" runat="server" Text="Black"></asp:Label>
             </div>
             <div class="button">
                 <br />
-                <asp:Button CssClass="btn" ID="Button7" runat="server" Text="Add to Cart" />
+                <asp:Button CssClass="btn" ID="Button7" runat="server" Text="View Product" />
             </div>
         </div>
         <div class="product8">
@@ -193,12 +195,12 @@
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label30" runat="server" Text="RM30 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label30" runat="server" Text="RM30&nbsp; | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label32" runat="server" Text="Black"></asp:Label>
             </div>
             <div class="button">
                 <br />
-                <asp:Button CssClass="btn" ID="Button8" runat="server" Text="Add to Cart" />
+                <asp:Button CssClass="btn" ID="Button8" runat="server" Text="View Product" />
             </div>
         </div>
         <div class="product9">
@@ -214,12 +216,12 @@
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label34" runat="server" Text="RM30 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label34" runat="server" Text="RM30&nbsp; | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label36" runat="server" Text="Grey"></asp:Label>
             </div>
             <div class="button">
                 <br />
-                <asp:Button CssClass="btn" ID="Button9" runat="server" Text="Add to Cart" />
+                <asp:Button CssClass="btn" ID="Button9" runat="server" Text="View Product" />
             </div>
         </div>
         <div class="product10">
@@ -235,12 +237,12 @@
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label38" runat="server" Text="RM29 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label38" runat="server" Text="RM29&nbsp; | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label40" runat="server" Text="Black"></asp:Label>
             </div>
             <div class="button">
                 <br />
-                <asp:Button CssClass="btn" ID="Button10" runat="server" Text="Add to Cart" />
+                <asp:Button CssClass="btn" ID="Button10" runat="server" Text="View Product" />
             </div>
         </div>
         <div class="product11">
@@ -256,12 +258,12 @@
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label42" runat="server" Text="RM29 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label42" runat="server" Text="RM29&nbsp; | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label44" runat="server" Text="White"></asp:Label>
             </div>
             <div class="button">
                 <br />
-                <asp:Button CssClass="btn" ID="Button11" runat="server" Text="Add to Cart" />
+                <asp:Button CssClass="btn" ID="Button11" runat="server" Text="View Product" />
             </div>
         </div>
         <div class="product12">
@@ -277,7 +279,7 @@
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label46" runat="server" Text="RM35 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label46" runat="server" Text="RM35&nbsp; | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label48" runat="server" Text="Light Blue"></asp:Label>
             </div>
             <div class="button">
