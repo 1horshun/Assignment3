@@ -54,7 +54,7 @@
                         <br />
 
                         <div class="input-group">
-                            <input class="input-field" type="number" name="quantity" value="0" max='<%# Eval("productQuantity")%>'>
+                            <input class="input-field" type="number" name="quantity" value="0" max='<%# Eval("productQuantity")%>' min='0'>
                         </div>
                     </div>
                 </div>

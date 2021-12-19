@@ -17,7 +17,8 @@ namespace Assignment3
 
             con.Open();
 
-            SqlCommand cmd = new SqlCommand("select productName, productPrice, productColor, imagePath, productQuantity from PRODUCT", con);
+            SqlCommand cmd = new SqlCommand("select productName, productQuantity, productColor, productPrice, imagePath, count(*) repeated from PRODUCT where pID=@pid group by productName, productQuantity, productColor, productPrice, imagePath having count(*) = 3", con);
+            cmd.Parameters.AddWithValue("@pid", Convert.ToInt32(Request.QueryString["PID"]));
             DataTable dt = new DataTable();
             SqlDataAdapter sdr = new SqlDataAdapter(cmd);
             sdr.Fill(dt);

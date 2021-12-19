@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Assignment3.WebForm1" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm1.aspx.cs" Inherits="Assignment3.WebForm1" EnableEventValidation="false"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder1" runat="server">
 
@@ -29,33 +29,42 @@
     </div>
 
     <br />
-
+    
     <div class="grid-container">
+        <asp:Repeater ID="repeater" runat="server">
+            <HeaderTemplate></HeaderTemplate>
+
+            <ItemTemplate>
         <div class="product1">
             <div class="image-box">
                 <div class="img">
-                    <asp:Image CssClass="product-img" ID="Image1" runat="server" src="images/march/set/A-1038.jpg" />
+                    <asp:Image CssClass="product-img" ID="Image1" runat="server" src='<%#Eval("imagePath") %>' />
                 </div>
                 <div class="overlay">
-                    <asp:Image CssClass="overlay-img" ID="Image2" runat="server" src="images/march/set/A-1040.jpg" />
+                    <asp:Image CssClass="overlay-img" ID="Image2" runat="server" src='<%#Eval("imagePath") %>' />
                 </div>
             </div>
 
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label1" runat="server" Text="Two Pieces Plaid Top & Skirt"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label1" runat="server" Text='<%#Eval("productName") %>'></asp:Label>
                     <br />
                 </div>
-                <asp:Label CssClass="product-price" ID="Label2" runat="server" Text="RM59&nbsp; | "></asp:Label>
-                <asp:Label CssClass="product-colour" ID="Label4" runat="server" Text="Beige"></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label2" runat="server">RM<%#Eval("productPrice")%>&nbsp; | </asp:Label>
+                <asp:Label CssClass="product-colour" ID="Label4" runat="server" Text='<%#Eval("productColor") %>'></asp:Label>
             </div>
             <div class="button">
                 <br />
-                <asp:Button CssClass="btn" ID="Button1" runat="server" Text="View Product" />
+                <asp:Button CssClass="btn" ID="Button1" runat="server" Text="View Product" OnClick="Button1_OnClick"/>
             </div>
+            
         </div>
+            </ItemTemplate>
 
+            <FooterTemplate></FooterTemplate>
+        </asp:Repeater>
 
+        <!--   
 
         <div class="product2">
             <div class="image-box">
@@ -289,6 +298,7 @@
                 <asp:Button CssClass="btn" ID="Button12" runat="server" Text="Add to Cart" />
             </div>
         </div>
+            -->
     </div>
 
 </asp:Content>
