@@ -22,6 +22,12 @@
         <span class="visually-hidden">Next</span>
     </div>
 
+    <div class="break-10">
+        <div class = "section-title">
+			<h2>Summer Series</h2>
+		</div>
+    </div>
+
     <div class="grid-container">
         <div class="product1">
             <div class="image-box">
@@ -35,11 +41,11 @@
 
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label1" runat="server" Text="Checkered Set"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label1" runat="server" Text="Two Pieces Plaid Top & Skirt"></asp:Label>
                     <br />
                 </div>
-                <asp:Label CssClass="product-price" ID="Label2" runat="server" Text="RM35 | "></asp:Label>
-                <asp:Label CssClass="product-colour" ID="Label4" runat="server" Text="White"></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label2" runat="server" Text="RM59 | "></asp:Label>
+                <asp:Label CssClass="product-colour" ID="Label4" runat="server" Text="Beige"></asp:Label>
             </div>
             <div class="button">
                 <br />
@@ -56,10 +62,10 @@
             </div>
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label5" runat="server" Text="Blazer"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label5" runat="server" Text="Classic Oversized Crop Blazer"></asp:Label>
                     <br />
                 </div>
-                <asp:Label CssClass="product-price" ID="Label6" runat="server" Text="RM35 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label6" runat="server" Text="RM40 | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label8" runat="server" Text="Black"></asp:Label>
             </div>
             <div class="button">
@@ -77,11 +83,11 @@
             </div>
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label9" runat="server" Text="Grey Cropped Sweater"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label9" runat="server" Text="Knitted Wool Sweater"></asp:Label>
                     <br />
                 </div>
-                <asp:Label CssClass="product-price" ID="Label10" runat="server" Text="RM25 | "></asp:Label>
-                <asp:Label CssClass="product-colour" ID="Label12" runat="server" Text="Grey"></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label10" runat="server" Text="RM35 | "></asp:Label>
+                <asp:Label CssClass="product-colour" ID="Label12" runat="server" Text="Light Blue"></asp:Label>
             </div>
             <div class="button">
                 <br />
@@ -98,7 +104,7 @@
             </div>
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label13" runat="server" Text="Top"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label13" runat="server" Text="Vintage Plaid Blouse"></asp:Label>
                     <br />
                 </div>
 
@@ -120,11 +126,11 @@
             </div>
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label17" runat="server" Text="Long-sleeved Polo Top"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label17" runat="server" Text="Open Collar V-Neck Ribbed-Knit Top"></asp:Label>
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label18" runat="server" Text="RM25 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label18" runat="server" Text="RM29 | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label20" runat="server" Text="Beige"></asp:Label>
             </div>
             <div class="button">
@@ -141,11 +147,11 @@
             </div>
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label21" runat="server" Text="Long-sleeved Polo Top"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label21" runat="server" Text="Open Collar V-Neck Ribbed-Knit Top"></asp:Label>
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label22" runat="server" Text="RM25 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label22" runat="server" Text="RM29 | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label24" runat="server" Text="Brown"></asp:Label>
             </div>
             <div class="button">
@@ -162,11 +168,11 @@
             </div>
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label25" runat="server" Text="Square Neck Top"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label25" runat="server" Text="Velvet Top with Lace"></asp:Label>
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label26" runat="server" Text="RM30 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label26" runat="server" Text="RM28 | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label28" runat="server" Text="Black"></asp:Label>
             </div>
             <div class="button">
@@ -183,11 +189,11 @@
             </div>
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label29" runat="server" Text="A-line Skirt"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label29" runat="server" Text="H. Waist A-Line Corduroy Skirt"></asp:Label>
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label30" runat="server" Text="RM25 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label30" runat="server" Text="RM30 | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label32" runat="server" Text="Black"></asp:Label>
             </div>
             <div class="button">
@@ -204,7 +210,7 @@
             </div>
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label33" runat="server" Text="Sweatpants"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label33" runat="server" Text="H. Waist Street Style Jogger Pants"></asp:Label>
                     <br />
                 </div>
 
@@ -225,11 +231,11 @@
             </div>
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label37" runat="server" Text="Buttoned Shorts"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label37" runat="server" Text="Ready-2-Go Short Pants"></asp:Label>
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label38" runat="server" Text="RM25 | "></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label38" runat="server" Text="RM29 | "></asp:Label>
                 <asp:Label CssClass="product-colour" ID="Label40" runat="server" Text="Black"></asp:Label>
             </div>
             <div class="button">
@@ -246,12 +252,12 @@
             </div>
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label41" runat="server" Text="Buttoned Shorts"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label41" runat="server" Text="Ready-2-Go Short Pants"></asp:Label>
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label42" runat="server" Text="RM25 | "></asp:Label>
-                <asp:Label CssClass="product-colour" ID="Label44" runat="server" Text="Beige"></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label42" runat="server" Text="RM29 | "></asp:Label>
+                <asp:Label CssClass="product-colour" ID="Label44" runat="server" Text="White"></asp:Label>
             </div>
             <div class="button">
                 <br />
@@ -267,12 +273,12 @@
             </div>
             <div class="content">
                 <div class="name-box">
-                    <asp:Label CssClass="product-name" ID="Label45" runat="server" Text="Denim Jeans Ripped Shorts"></asp:Label>
+                    <asp:Label CssClass="product-name" ID="Label45" runat="server" Text="Skinny Mid-Length Ripped Jeans"></asp:Label>
                     <br />
                 </div>
 
-                <asp:Label CssClass="product-price" ID="Label46" runat="server" Text="RM30 | "></asp:Label>
-                <asp:Label CssClass="product-colour" ID="Label48" runat="server" Text="Light"></asp:Label>
+                <asp:Label CssClass="product-price" ID="Label46" runat="server" Text="RM35 | "></asp:Label>
+                <asp:Label CssClass="product-colour" ID="Label48" runat="server" Text="Light Blue"></asp:Label>
             </div>
             <div class="button">
                 <br />
