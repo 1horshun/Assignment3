@@ -2,22 +2,26 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder1" runat="server">
     <div class="container">
+         <asp:Repeater ID="repeater1" runat="server">
+            <HeaderTemplate></HeaderTemplate>
+
+             <ItemTemplate>
         <div class="row">
             <div class="col-md-1"></div>
 
             <!-- PRODUCT IMAGE -->
             <div class="col-md-4">
-                <img src="images/march/set/A-1038.jpg" CssClass="d-block w-100" alt="..." style="width: 360px; height: 430px;"/>
+                <img src='<%# Eval("imagePath")%>' CssClass="d-block w-100" alt="..." style="width: 360px; height: 430px;"/>
             </div>
 
             <!-- PRODUCT DETAILS -->
             <div class="col-md-6 product-description">
                 <div class="row">
-                    <h2>Two Pieces Plaid Top & Skirt (Beige)</h2>
+                    <h2><%#Eval("productName") %></h2>
                 </div>
 
                 <div class="row">
-                    <h5 class="text-muted">RM59.00</h5>
+                    <h5 class="text-muted">RM<%#Eval("productPrice")%>.00</h5>
                 </div>
 
                 <div class="row">
@@ -25,7 +29,7 @@
                         <span>Color</span>
 
                         <div class="color-name">
-                            <h5>Beige</h5>
+                            <h5><%#Eval("productColor") %></h5>
                         </div>
                     </div>
                 </div>
@@ -50,7 +54,7 @@
                         <br />
 
                         <div class="input-group">
-                            <input class="input-field" type="number" name="quantity" value="0">
+                            <input class="input-field" type="number" name="quantity" value="0" max='<%# Eval("productQuantity")%>'>
                         </div>
                     </div>
                 </div>
@@ -64,5 +68,10 @@
 
             <div class="col-md-1"></div>
         </div>
+
+        </ItemTemplate>
+
+        <FooterTemplate></FooterTemplate>
+        </asp:Repeater>
     </div>
 </asp:Content>
