@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm10.aspx.cs" Inherits="Assignment3.WebForm10" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site1.Master" AutoEventWireup="true" CodeBehind="WebForm10.aspx.cs" Inherits="Assignment3.WebForm10" EnableEventValidation="false"%>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder1" runat="server">
     <div class="container">
@@ -41,9 +41,9 @@
                         <br />
 
                         <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatLayout="Flow" RepeatDirection="Horizontal">
-                            <asp:ListItem CssClass="radio"><h5>&nbsp;S&emsp;&nbsp;</h5></asp:ListItem>
-                            <asp:ListItem CssClass="radio"><h5>&nbsp;M&emsp;&nbsp;</h5></asp:ListItem>
-                            <asp:ListItem CssClass="radio"><h5>&nbsp;L</h5></asp:ListItem>
+                            <asp:ListItem CssClass="radio">S</asp:ListItem>
+                            <asp:ListItem CssClass="radio">M</asp:ListItem>
+                            <asp:ListItem CssClass="radio">L</asp:ListItem>
                         </asp:RadioButtonList>
                     </div>
                 </div>
@@ -54,14 +54,14 @@
                         <br />
 
                         <div class="input-group">
-                            <input class="input-field" type="number" name="quantity" value="0" max='<%# Eval("productQuantity")%>' min='0'>
+                            <asp:TextBox ID="quantity" TextMode="Number" runat="server" Text="0"  min="1" max='<%#Eval("productQuantity")%>'></asp:TextBox>
                         </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="product-button" style="padding-top: 20px;">
-                        <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" style = "background-color: #00adb5; border: none; color: #fff; width: 160px; border-radius: 4px; font-size: 14px; text-decoration: none; display: inline-block; height: 50px;" onMouseOver="this.style.background='#393e46'" onMouseOut="this.style.background='#00adb5'" Text="Add to Cart" />
+                        <asp:Button ID="Button1" runat="server" CssClass="btn btn-primary" style = "background-color: #00adb5; border: none; color: #fff; width: 160px; border-radius: 4px; font-size: 14px; text-decoration: none; display: inline-block; height: 50px;" onMouseOver="this.style.background='#393e46'" onMouseOut="this.style.background='#00adb5'" Text="Add to Cart" OnClick="Button1_Click"/>
                     </div>
                 </div>
             </div>
