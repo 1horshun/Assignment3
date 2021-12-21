@@ -21,8 +21,8 @@ namespace Assignment3
             DataTable dt = new DataTable();
             SqlDataAdapter sdr = new SqlDataAdapter(cmd);
             sdr.Fill(dt);
-            repeater.DataSource = dt;
-            repeater.DataBind();
+            repeater_home.DataSource = dt;
+            repeater_home.DataBind();
             cmd.ExecuteNonQuery();
 
             con.Close();

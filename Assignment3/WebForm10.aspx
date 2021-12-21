@@ -11,7 +11,7 @@
 
             <!-- PRODUCT IMAGE -->
             <div class="col-md-4">
-                <img src='<%# Eval("imagePath")%>' CssClass="d-block w-100" alt="..." style="width: 360px; height: 430px;"/>
+                <img src='<%#Eval("imagePath")%>' CssClass="d-block w-100" alt="..." style="width: 360px; height: 430px;"/>
             </div>
 
             <!-- PRODUCT DETAILS -->

@@ -31,7 +31,7 @@
     <br />
     
     <div class="grid-container">
-        <asp:Repeater ID="repeater" runat="server">
+        <asp:Repeater ID="repeater_home" runat="server">
             <HeaderTemplate></HeaderTemplate>
 
             <ItemTemplate>

@@ -60,13 +60,13 @@ namespace Assignment3
         protected global::System.Web.UI.WebControls.Button Button17;
 
         /// <summary>
-        /// repeater control.
+        /// repeater_home control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater repeater;
+        protected global::System.Web.UI.WebControls.Repeater repeater_home;
 
         /// <summary>
         /// Image3 control.
