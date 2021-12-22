@@ -13,7 +13,19 @@ namespace Assignment3
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True");
 
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("select productName, productQuantity, productColor, productPrice, imagePath, count(*) repeated from PRODUCT group by productName, productQuantity, productColor, productPrice, imagePath having count(*) = 3", con);
+            DataTable dt = new DataTable();
+            SqlDataAdapter sdr = new SqlDataAdapter(cmd);
+            sdr.Fill(dt);
+            repeater_cart.DataSource = dt;
+            repeater_cart.DataBind();
+            cmd.ExecuteNonQuery();
+
+            con.Close();
         }
     }
 }

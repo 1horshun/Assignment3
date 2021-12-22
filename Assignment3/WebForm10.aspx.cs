@@ -60,20 +60,42 @@ namespace Assignment3
             SqlDataReader sdr = cmd.ExecuteReader();
             int ID = default;
             int price = default;
+            int product_qty = default;
+            int to_pay = default;
             if (sdr.Read())
             {
                 ID = Convert.ToInt32(sdr["productID"].ToString());
                 price = Convert.ToInt32(sdr["productPrice"].ToString());
+                product_qty = Convert.ToInt32(sdr["productQuantity"].ToString());
             }
             sdr.Close();
 
-            int to_pay = Convert.ToInt32(quantity) * price;
+            SqlCommand cmd3 = new SqlCommand("select * from CART where productid=" + ID, con);
+            using (SqlDataAdapter sda = new SqlDataAdapter(cmd3))
+            {
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
 
-            SqlCommand cmd1 = new SqlCommand("insert into CART (productid,productquantity,productprice) values(@id, @qty, @price)", con);
-            cmd1.Parameters.AddWithValue("@id", ID);
-            cmd1.Parameters.AddWithValue("@qty", quantity);
-            cmd1.Parameters.AddWithValue("@price", to_pay);
-            cmd1.ExecuteNonQuery();
+                if (dt.Rows.Count > 0)
+                {
+                    to_pay = price * (product_qty + Convert.ToInt32(quantity));
+                    SqlCommand cmd2 = new SqlCommand("update CART set productquantity=productquantity+@qty, productprice=@price where productid=@id", con);
+                    cmd2.Parameters.AddWithValue("@qty", quantity);
+                    cmd2.Parameters.AddWithValue("@price", to_pay);
+                    cmd2.Parameters.AddWithValue("@id", ID);
+                    cmd2.ExecuteNonQuery();
+                }
+                else
+                {
+                    to_pay = Convert.ToInt32(quantity) * price;
+
+                    SqlCommand cmd1 = new SqlCommand("insert into CART (productid,productquantity,productprice) values(@id, @qty, @price)", con);
+                    cmd1.Parameters.AddWithValue("@id", ID);
+                    cmd1.Parameters.AddWithValue("@qty", quantity);
+                    cmd1.Parameters.AddWithValue("@price", to_pay);
+                    cmd1.ExecuteNonQuery();
+                }
+            }
 
             con.Close();
         }

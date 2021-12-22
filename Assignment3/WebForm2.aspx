@@ -14,25 +14,36 @@
                 <div class="row">
                     <div class="col-12">
                         <!-- SHOPPING SUMMARY -->
-                        <asp:Table ID="Table1" runat="server" CssClass="table shopping-summary">
-                            <asp:TableHeaderRow runat="server" CssClass="main-heading">
-                                <asp:TableCell runat="server" CssClass="th">Product</asp:TableCell>
-                                <asp:TableCell runat="server" CssClass="name th">Name</asp:TableCell>
-                                <asp:TableCell runat="server" CssClass="text-center th">Unit Price</asp:TableCell>
-                                <asp:TableCell runat="server" CssClass="text-center th">Quantity</asp:TableCell>
-                                <asp:TableCell runat="server" CssClass="text-center th">Total</asp:TableCell>
-                                <asp:TableCell runat="server" CssClass="text-center th"><i class = "fa fa-trash remove-icon-first"></asp:TableCell>
-                            </asp:TableHeaderRow>
+                        <asp:Repeater ID="repeater_cart" runat="server">
+                        <HeaderTemplate>
+                        <table id="Table1" class="table shopping-summary">
+	                        <thead>
+	                        <tr class="main-heading">
+		                        <th>Product</th>
+		                        <th class="text-center name th">Name</th> 
+		                        <th class="text-center th">Unit Price</th>
+		                        <th class="text-center th">Quantity</th>
+		                        <th class="text-center th">Total</th>
+		                        <th class="text-center th"><i class = "fa fa-trash remove-icon-first"></th>
+	                        </thead>
+                            <tbody>
+                        </HeaderTemplate>
+                        <ItemTemplate>
 
-                            <asp:TableRow runat="server">
-                                <asp:TableCell runat="server"></asp:TableCell>
-                                <asp:TableCell runat="server"></asp:TableCell>
-                                <asp:TableCell runat="server"></asp:TableCell>
-                                <asp:TableCell runat="server"></asp:TableCell>
-                                <asp:TableCell runat="server"></asp:TableCell>
-                                <asp:TableCell runat="server"></asp:TableCell>
-                            </asp:TableRow>
-                        </asp:Table>
+	                        <tr>
+		                        <td class="product-img" id="Image1"><img src='<%#Eval("imagePath") %>' style: width="150px"; height="150px";/></td>
+		                        <td><%#Eval("productName") %></td>
+		                        <td>RM<%#Eval("productPrice")%></td>
+		                        <td><%#Eval("productQuantity") %></td>
+		                        <td></td>
+		                        <td></td>
+	                        </tr>
+                        </ItemTemplate>
+                        <FooterTemplate>
+                            </tbody>
+                        </table>
+                        </FooterTemplate>
+                        </asp:Repeater>
                         <!-- END SHOPPING SUMMARY -->
                     </div>
                 </div>

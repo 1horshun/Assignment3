@@ -15,13 +15,13 @@ namespace Assignment3
     {
 
         /// <summary>
-        /// Table1 control.
+        /// repeater_cart control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table Table1;
+        protected global::System.Web.UI.WebControls.Repeater repeater_cart;
 
         /// <summary>
         /// Button1 control.
