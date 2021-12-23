@@ -15,5 +15,33 @@ namespace Assignment3
         {
 
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string uname = TextBox1.Text;
+                string pw = TextBox2.Text;
+
+                SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True");
+
+                con.Open();
+                SqlCommand cmd = new SqlCommand("select * from CUSTOMER where username='" + uname + "' and password='" + pw + "'", con);
+                SqlDataReader sdr = cmd.ExecuteReader();
+                if (sdr.Read())
+                {
+                    Response.Redirect("WebForm1.aspx");
+                }
+                else
+                {
+                    Warning.Visible = true;
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                Response.Write(ex.Message);
+            }
+        }
     }
 }

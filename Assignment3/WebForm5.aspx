@@ -80,7 +80,7 @@
                 return "";
             }
     }
-    function isvalidanswer() {
+<%--    function isvalidanswer() {
         var uid;
         var temp = document.getElementById("<%=TextBox5.ClientID %>");
             uid = temp.value;
@@ -90,7 +90,7 @@
             else {
                 return "";
             }
-    }
+    }--%>
     function isvalidadd() {
         var uid;
         var temp = document.getElementById("<%=TextBox11.ClientID %>");
@@ -135,8 +135,15 @@
         else {
             return "";
         }
-    }
+    } 
 </script>
+    <div>
+        <asp:Label ID="successMessage" runat="server" Text=""></asp:Label>
+        <asp:Label ID="failMessage" runat="server" Text=""></asp:Label>
+    </div>
+
+    <asp:HiddenField ID="hiddenFieldUserID" runat ="server" />
+
     <div class="login-signup container-fluid">
         <div class="wrapper">
             <div class="col-md-12 mx-auto">
@@ -187,7 +194,7 @@
                         <div class="row g-2">
                             <div class="col-md">
                                 <div class="form-floating">
-                                    <asp:TextBox ID="TextBox9" CssClass="form-control" runat="server" placeholder="Passward" TextMode="Password"></asp:TextBox>
+                                    <asp:TextBox ID="TextBox9" CssClass="form-control" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox>
                                     <label for="floatingInput">Password</label>
                                 </div>
                             </div>
@@ -200,26 +207,6 @@
                             </div>
                         </div>
                         <br />
-                        <div class="row g-2">
-                            <div class="col-md">
-                                <div class="form-floating">
-                                    <asp:DropDownList ID="DropDownList1" CssClass="form-control" runat="server">
-                                        <asp:ListItem>Select</asp:ListItem>
-                                        <asp:ListItem>What is your mother&#39;s first name?</asp:ListItem>
-                                        <asp:ListItem>What is your pet&#39;s first name?</asp:ListItem>
-                                        <asp:ListItem>In what city were you born?</asp:ListItem>
-                                        <asp:ListItem>What is the name of your first school?</asp:ListItem>
-                                    </asp:DropDownList>
-                                    <label for="floatingInput">Select Security Questions</label>
-                                </div>
-                            </div>
-                            <div class="col-md">
-                                <div class="form-floating">
-                                    <asp:TextBox ID="TextBox5" CssClass="form-control" runat="server" placeholder="Text"></asp:TextBox>
-                                    <label for="floatingInput">Answer</label>
-                                </div>
-                            </div>
-                        </div>
                         <br />
                         <div class="row">
                             <center>
@@ -229,12 +216,12 @@
                         </div>
                         <div class="row g-2">
                             <div class="form-floating mb-3">
-                                <asp:TextBox ID="TextBox11" CssClass="form-control" runat="server" placeholder="Street 1"></asp:TextBox>
-                                <label for="floatingInput">Street Line 1</label>
+                                <asp:TextBox ID="TextBox11" CssClass="form-control" runat="server" placeholder="Security Phrase"></asp:TextBox>
+                                <label for="floatingInput">Security Phrase</label>
                             </div>
                             <div class="form-floating mb-3">
-                                <asp:TextBox ID="TextBox12" CssClass="form-control" runat="server" placeholder="Street 2"></asp:TextBox>
-                                <label for="floatingInput">Street Line 2 *Optional*</label>
+                                <asp:TextBox ID="TextBox12" CssClass="form-control" runat="server" placeholder="Address Line"></asp:TextBox>
+                                <label for="floatingInput">Address Line</label>
                             </div>
                         </div>
 
@@ -261,8 +248,8 @@
                     </div>
                     <br />
                     <div class="d-grid gap-2 col-6 mx-auto">
-                        <asp:Button ID="Button1" runat="server" Text="Submit Details" class="btn btn-block" OnClientClick="javascript:validate()"/>
-                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="login-link">Back to Login Page</asp:HyperLink>
+                        <asp:Button ID="Button1" runat="server" Text="Submit Details" CssClass="btn btn-block" OnClick="userRegister"/>
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="login-link" NavigateUrl="~/WebForm1.aspx">Back to Login Page</asp:HyperLink>
                     </div>
 
                 </div>

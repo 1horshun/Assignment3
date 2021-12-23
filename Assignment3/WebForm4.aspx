@@ -2,7 +2,7 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder1" runat="server">
-
+    <asp:Label ID="Warning" runat="server" Text="Incorrect username or password! Please log in again." Visible="false"></asp:Label>
     <div class="login-signup container">
         <div class="wrapper">
             <div class="col-md-6 mx-auto">
@@ -34,9 +34,9 @@
                                     </div>
 
                                     <div class="d-grid gap-2 col-6 mx-auto">
-                                        <asp:Button ID="Button1" runat="server" Text="Login" class="btn btn-block" />
+                                        <asp:Button ID="Button1" runat="server" Text="Login" class="btn btn-block" onclick="Button1_Click"/>
                                         <asp:HyperLink ID="HyperLink2" runat="server" CssClass="reset-link">Forgot Password?</asp:HyperLink>
-                                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="signup-link">Not a Member?</asp:HyperLink>
+                                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="signup-link" NavigateUrl="~/WebForm5.aspx">Not a Member?</asp:HyperLink>
                                     </div>
 
                                 </div>

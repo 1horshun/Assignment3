@@ -49,8 +49,8 @@
 
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="form-group">
-                                        <asp:Label ID="Label6" runat="server" Text="District"></asp:Label>
-                                        <asp:TextBox ID="TextBox6" runat="server" Enabled="true" CssClass="form-control input-sm" placeholder="Enter district" />
+                                        <asp:Label ID="Label6" runat="server" Text="City"></asp:Label>
+                                        <asp:TextBox ID="TextBox6" runat="server" Enabled="true" CssClass="form-control input-sm" placeholder="Enter city" />
                                     </div>
                                 </div>
 
