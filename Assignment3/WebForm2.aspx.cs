@@ -16,8 +16,19 @@ namespace Assignment3
             SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True");
 
             con.Open();
+            int userID = default;
+            SqlCommand cmd4 = new SqlCommand("select userID from CUSTOMER where username=@username", con);
+            cmd4.Parameters.AddWithValue("@username", Session["uname"].ToString());
+            SqlDataReader sdr1 = cmd4.ExecuteReader();
+            if (sdr1.Read())
+            {
+                userID = Convert.ToInt32(sdr1[userID]);
+            }
+            sdr1.Close();
 
-            SqlCommand cmd = new SqlCommand("select productName, productQuantity, productColor, productPrice, imagePath, count(*) repeated from PRODUCT group by productName, productQuantity, productColor, productPrice, imagePath having count(*) = 3", con);
+
+            SqlCommand cmd = new SqlCommand("select * from CART left join PRODUCT on CART.productid= PRODUCT.productId where uid=@uid", con);
+            cmd.Parameters.AddWithValue("@uid", userID);
             DataTable dt = new DataTable();
             SqlDataAdapter sdr = new SqlDataAdapter(cmd);
             sdr.Fill(dt);
@@ -25,7 +36,32 @@ namespace Assignment3
             repeater_cart.DataBind();
             cmd.ExecuteNonQuery();
 
+            int subtotal = GetSubTotal(userID);
+            int total = subtotal + 8; //shipping = rm8
+            totalpay.InnerText = "RM" + total + ".00";
+
             con.Close();
+        }
+
+        protected int GetSubTotal(int uid)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True");
+
+            con.Open();
+
+            int total = default;
+            SqlCommand cmd = new SqlCommand("select sum(totalprice) as total from CART where uid=@uid", con);
+            cmd.Parameters.AddWithValue("@uid", uid);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            if(sdr.Read())
+            {
+                total = Convert.ToInt32(sdr["total"].ToString());
+            }
+
+            subtotal.InnerText = "RM" + total + ".00";
+            con.Close();
+
+            return total;
         }
     }
 }

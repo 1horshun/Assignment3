@@ -35,7 +35,7 @@
 		                        <td><%#Eval("productName") %></td>
 		                        <td>RM<%#Eval("productPrice")%></td>
 		                        <td><%#Eval("productQuantity") %></td>
-		                        <td></td>
+		                        <td>RM<%#Eval("totalprice")%></td>
 		                        <td></td>
 	                        </tr>
                         </ItemTemplate>
@@ -62,9 +62,9 @@
                                 <div class="col-lg-4 col-md-7 col-12">
                                     <div class="right">
                                         <ul>
-                                            <li>Cart Subtotal<span></span></li>
+                                            <li>Cart Subtotal<span runat="server" id="subtotal"></span></li>
                                             <li>Shipping<span>RM8.00</span></li>
-                                            <li class="last">You Pay<span></span></li>
+                                            <li class="last">You Pay<span runat="server" id="totalpay"></span></li>
                                         </ul>
 
                                         <div class="cartBtn">

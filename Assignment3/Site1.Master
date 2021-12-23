@@ -11,7 +11,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="super-container">
+        <div class="super-container d-flex flex-column min-vh-100">
             <%-- Header --%>
             <header class="header trans-300">
                 <!-- MAIN NAVIGATION -->
@@ -24,8 +24,10 @@
 
                             <nav class="navbar">
                                 <ul class="navbar-user">
-                                    <li><a href="WebForm4.aspx"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-                                    <li><a href="WebForm2.aspx"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                    <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><asp:Label runat="server" ID="user_name"></asp:Label><i class="fa fa-user" aria-hidden="true"></i></asp:LinkButton></li>
+                                    <li><asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Logout</asp:LinkButton></li>
+                                    <li><a href="WebForm2.aspx" runat="server" id="cartlink"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                                    
                                 </ul>
                             </nav>
                         </div>
@@ -46,7 +48,7 @@
             <div class = "break-100"></div>
 
             <!-- FOOTER -->
-            <footer class="footer container-fluid">
+            <footer class="footer container-fluid mt-auto">
                 <div class="footer-top section">
                     <div class="container row">
                         <!-- LEFT SIDE -->

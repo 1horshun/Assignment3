@@ -30,6 +30,7 @@ namespace Assignment3
                 SqlDataReader sdr = cmd.ExecuteReader();
                 if (sdr.Read())
                 {
+                    Session["uname"] = uname;
                     Response.Redirect("WebForm1.aspx");
                 }
                 else
