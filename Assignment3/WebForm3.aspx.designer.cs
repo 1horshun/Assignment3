@@ -15,13 +15,22 @@ namespace Assignment3
     {
 
         /// <summary>
-        /// orderWarning control.
+        /// orderWarning1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label orderWarning;
+        protected global::System.Web.UI.WebControls.Label orderWarning1;
+
+        /// <summary>
+        /// orderWarning2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label orderWarning2;
 
         /// <summary>
         /// Label1 control.

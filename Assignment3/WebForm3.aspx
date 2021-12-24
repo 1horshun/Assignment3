@@ -7,7 +7,8 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-12">
                     <div class="checkout-form">
-                        <asp:Label ID="orderWarning" runat="server" Text="" Visible = "false"></asp:Label>
+                        <h3 class="section-title"><asp:Label ID="orderWarning1" runat="server" Text="" style="text-align: center; color: crimson;" Visible = "false"></asp:Label></h3>
+                        <h3 class="section-title"><asp:Label ID="orderWarning2" runat="server" Text="" style="text-align: center; color: #00adb5;" Visible = "false"></asp:Label></h3>
 
                         <h2>Make Your Checkout Here</h2>
                         <p>Please register in order to checkout more quickly</p>

@@ -88,14 +88,24 @@ namespace Assignment3
         {
             if(RadioButtonList1.SelectedIndex < 0)
             {
-                orderWarning.Text = "Please select payment method";
-                orderWarning.Visible = true;
+                orderWarning1.Text = "Please select payment method";
+                orderWarning1.Visible = true;
             }
             else
             {
-                orderWarning.Text = "checkout successfully";
-                orderWarning.Visible = true;
+                orderWarning2.Text = "checkout successfully";
+                orderWarning2.Visible = true;
+                orderWarning1.Visible = false;
             }
+
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True");
+
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("truncate table CART", con);
+            cmd.ExecuteNonQuery();
+
+            con.Close();
 
         }
     }
