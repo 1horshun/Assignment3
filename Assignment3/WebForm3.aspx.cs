@@ -83,5 +83,20 @@ namespace Assignment3
 
             con.Close();
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            if(RadioButtonList1.SelectedIndex < 0)
+            {
+                orderWarning.Text = "Please select payment method";
+                orderWarning.Visible = true;
+            }
+            else
+            {
+                orderWarning.Text = "checkout successfully";
+                orderWarning.Visible = true;
+            }
+
+        }
     }
 }

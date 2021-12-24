@@ -7,6 +7,8 @@
             <div class="row">
                 <div class="col-lg-12 col-md-12 col-12">
                     <div class="checkout-form">
+                        <asp:Label ID="orderWarning" runat="server" Text="" Visible = "false"></asp:Label>
+
                         <h2>Make Your Checkout Here</h2>
                         <p>Please register in order to checkout more quickly</p>
 
@@ -97,7 +99,7 @@
                                 <div class ="single-widget get-button">
                                     <div class="content">
                                         <div class="get-button">
-                                            <asp:Button ID="Button1" runat="server" Text="Confirm Order" CssClass="button"/>
+                                            <asp:Button ID="Button1" runat="server" Text="Confirm Order" CssClass="button" OnClick="Button1_Click"/>
                                         </div>
                                     </div>
                                 </div>
