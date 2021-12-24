@@ -41,6 +41,8 @@ namespace Assignment3
             int total = subtotal + 8; //shipping = rm8
             totalpay.InnerText = "RM" + total + ".00";
 
+            CheckIsEmpty(userID);
+
             con.Close();
         }
 
@@ -111,6 +113,29 @@ namespace Assignment3
             cmd5.Parameters.AddWithValue("@userID", userID);
             cmd5.ExecuteNonQuery();
             Response.Redirect("WebForm2.aspx");
+            con.Close();
+        }
+
+        protected void CheckIsEmpty(int uid)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True");
+
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand("select * from CART where uid=@uid", con);
+            cmd.Parameters.AddWithValue("@uid", uid);
+            SqlDataReader sdr = cmd.ExecuteReader();
+            if (sdr.Read())
+            {
+                if (sdr["productid"] is DBNull)
+                {
+                    Button1.Enabled = false;
+                }
+                else
+                {
+                    Button1.Enabled = true;
+                }
+            }
             con.Close();
         }
 

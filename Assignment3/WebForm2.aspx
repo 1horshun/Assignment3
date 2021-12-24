@@ -72,7 +72,7 @@
                                         </ul>
 
                                         <div class="cartBtn">
-                                            <asp:Button ID="Button1" runat="server" Text="Checkout" CssClass="btn" OnClick="Button1_Click"/>
+                                            <asp:Button ID="Button1" runat="server" Text="Checkout" CssClass="btn" OnClick="Button1_Click" Enabled="false"/>
                                             <asp:Button ID="Button2" runat="server" Text="Continue Shopping" CssClass="btn" OnClick="Button2_Click"/>
                                         </div>
                                     </div>
