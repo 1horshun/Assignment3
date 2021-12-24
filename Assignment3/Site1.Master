@@ -24,10 +24,14 @@
 
                             <nav class="navbar">
                                 <ul class="navbar-user">
-                                    <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><asp:Label runat="server" ID="user_name"></asp:Label><i class="fa fa-user" aria-hidden="true"></i></asp:LinkButton></li>
-                                    <li><asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Logout</asp:LinkButton></li>
-                                    <li><a href="WebForm2.aspx" runat="server" id="cartlink"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                                    
+                                    <li><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">
+                                            <i class="fa fa-user" aria-hidden="true" style="position: absolute; margin-right: 110px;"></i>
+                                            <asp:Label runat="server" ID="user_name" style="margin-right: 16px;"></asp:Label>
+                                        </asp:LinkButton>
+                                    </li>
+
+                                    <li><a href="WebForm2.aspx" runat="server" id="cartlink"><i class="fa fa-shopping-cart" aria-hidden="true" style="margin-left: 20px;"></i></a></li>
+                                    <li><asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click" style="margin-left: 15px;">Logout</asp:LinkButton></li>
                                 </ul>
                             </nav>
                         </div>

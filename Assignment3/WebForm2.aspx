@@ -19,24 +19,24 @@
                         <table id="Table1" class="table shopping-summary">
 	                        <thead>
 	                        <tr class="main-heading">
-		                        <th>Product</th>
-		                        <th class="text-center name th">Name</th>
-                                <th class="text-center th">Color</th>
-                                <th class="text-center th">Size</th>
-		                        <th class="text-center th">Unit Price</th>
-		                        <th class="text-center th">Quantity</th>
-		                        <th class="text-center th">Total</th>
-		                        <th class="text-center th"><i class = "fa fa-trash remove-icon-first"></th>
+		                        <th class="text-left" style: width="200px">Product</th>
+		                        <th class="text-left">Name</th>
+                                <th class="text-left">Color</th>
+                                <th class="text-left">Size</th>
+		                        <th class="text-left">Unit Price</th>
+		                        <th class="text-left">Quantity</th>
+		                        <th class="text-left">Total</th>
+		                        <th class="text-left">Remove</th>
 	                        </thead>
                             <tbody>
                         </HeaderTemplate>
                         <ItemTemplate>
 
 	                        <tr>
-		                        <td class="product-img" id="Image1"><img src='<%#Eval("imagePath") %>' style: width="150px"; height="150px";/></td>
-		                        <td runat="server" id="product_name"><%#Eval("productName") %></td>
-                                <td runat="server" id="product_color"><%#Eval("productColor") %></td>
-                                <td runat="server" id="product_size"><%#Eval("productSize") %></td>
+		                        <td class="product-img text-left" id="Image1"><img src='<%#Eval("imagePath") %>' style: width="150px"; height="150px";/></td>
+		                        <td runat="server" class="text-left" id="product_name"><%#Eval("productName") %></td>
+                                <td runat="server" class="text-left" id="product_color"><%#Eval("productColor") %></td>
+                                <td runat="server" class="text-left" id="product_size"><%#Eval("productSize") %></td>
 		                        <td>RM<%#Eval("productPrice")%></td>
 		                        <td><%#Eval("productQuantity") %></td>
 		                        <td>RM<%#Eval("totalprice")%></td>

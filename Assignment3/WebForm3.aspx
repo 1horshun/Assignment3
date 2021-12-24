@@ -61,12 +61,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="form-group">
-                                        <asp:Label ID="Label8" runat="server" Text="Bank Transaction ID"></asp:Label>
-                                        <asp:TextBox ID="TextBox8" runat="server" Enabled="true" CssClass="form-control input-sm" placeholder="Enter bank transaction ID" />
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
 

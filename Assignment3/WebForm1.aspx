@@ -5,13 +5,13 @@
     <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <asp:Image ID="Image25" runat="server" src="images/slide_1.png" CssClass="d-block w-100" />
+                <asp:Image ID="Image25" runat="server" src="images/slide_3.png" CssClass="d-block w-100" />
             </div>
             <div class="carousel-item">
                 <asp:Image ID="Image26" runat="server" src="images/slide_2.png" CssClass="d-block w-100" />
             </div>
             <div class="carousel-item">
-                <asp:Image ID="Image27" runat="server" src="images/slide_3.png" CssClass="d-block-w-100" Width="1600px" Height="555px" />
+                <asp:Image ID="Image27" runat="server" src="images/slide_1.png" CssClass="d-block w-100"/>
             </div>
         </div>
         <asp:Button ID="Button16" runat="server" CssClass="carousel-control-prev" data-bs-target="#carouselControls" data-bs-slide="prev" />

@@ -40,18 +40,16 @@ namespace Assignment3
                 string Username = TextBox3.Text;
                 string phoneno = TextBox4.Text;
                 string pw = TextBox9.Text;
-                string securityPhrase = TextBox11.Text;
                 string Address = TextBox12.Text;
                 string State = TextBox6.Text;
                 string City = TextBox7.Text;
                 int Postcode = Convert.ToInt32(TextBox8.Text);
 
-                SqlCommand cmd1 = new SqlCommand("insert into CUSTOMER (name, username, password, phoneNum, securityQuestion, address, state, city, postcode, dob) values(@Name, @Username, @pw, @Phoneno, @SecurityPhrase, @Address, @State, @City, @Postcode, @DOB)", con);
+                SqlCommand cmd1 = new SqlCommand("insert into CUSTOMER (name, username, password, phoneNum, address, state, city, postcode, dob) values(@Name, @Username, @pw, @Phoneno, @Address, @State, @City, @Postcode, @DOB)", con);
                 cmd1.Parameters.AddWithValue("@Name", Name);
                 cmd1.Parameters.AddWithValue("@Username", Username);
                 cmd1.Parameters.AddWithValue("@pw", pw);
                 cmd1.Parameters.AddWithValue("@Phoneno", phoneno);
-                cmd1.Parameters.AddWithValue("@securityPhrase", securityPhrase);
                 cmd1.Parameters.AddWithValue("@Address", Address);
                 cmd1.Parameters.AddWithValue("@State", State);
                 cmd1.Parameters.AddWithValue("@City", City);
@@ -59,8 +57,11 @@ namespace Assignment3
                 cmd1.Parameters.AddWithValue("@DOB", DOB);
                 cmd1.ExecuteNonQuery();
 
-                successMessage.Text = "User Registered Successfully!";
                 Clear();
+
+                successMessage.Text = "User Registered Successfully!";
+                successMessage.Visible = true;
+     
             }
 
 
@@ -69,7 +70,7 @@ namespace Assignment3
 
         void Clear()
         {
-            TextBox1.Text = TextBox2.Text = TextBox3.Text = TextBox4.Text = TextBox6.Text = TextBox7.Text = TextBox8.Text = TextBox9.Text = TextBox11.Text = TextBox12.Text = "";
+            TextBox1.Text = TextBox2.Text = TextBox3.Text = TextBox4.Text = TextBox6.Text = TextBox7.Text = TextBox8.Text = TextBox9.Text = TextBox12.Text = "";
             successMessage.Text = failMessage.Text = "";
         }
     }

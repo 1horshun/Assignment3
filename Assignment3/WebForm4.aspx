@@ -2,15 +2,17 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder1" runat="server">
-    <asp:Label ID="Warning" runat="server" Text="Incorrect username or password! Please log in again." Visible="false"></asp:Label>
-    <div class="login-signup container">
+    <h3 class="section-title"><asp:Label ID="Warning" runat="server" style="text-align: center; color: crimson;" Text="Incorrect username or password! Please login again" Visible="false"></asp:Label></h3>
+    <div class="login-signup container" style="margin-top: 40px;">
         <div class="wrapper">
             <div class="col-md-6 mx-auto">
                 <div class="card">
                     <div class="card-body">
                         <div class="row">
                             <div class="col">
-                                <asp:Label ID="Label1" runat="server" Text="Login Form" CssClass="title-text"></asp:Label>
+                                <div class="row-title">
+                                    <asp:Label ID="Label1" runat="server" Text="Login Form"></asp:Label>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
@@ -35,8 +37,7 @@
 
                                     <div class="d-grid gap-2 col-6 mx-auto">
                                         <asp:Button ID="Button1" runat="server" Text="Login" class="btn btn-block" onclick="Button1_Click"/>
-                                        <asp:HyperLink ID="HyperLink2" runat="server" CssClass="reset-link">Forgot Password?</asp:HyperLink>
-                                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="signup-link" NavigateUrl="~/WebForm5.aspx">Not a Member?</asp:HyperLink>
+                                        <asp:HyperLink ID="HyperLink1" runat="server" class="text-center" NavigateUrl="~/WebForm5.aspx">Not a Member?</asp:HyperLink>
                                     </div>
 
                                 </div>

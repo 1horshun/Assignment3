@@ -42,8 +42,8 @@
 
                         <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatLayout="Flow" RepeatDirection="Horizontal">
                             <asp:ListItem CssClass="radio">S</asp:ListItem>
-                            <asp:ListItem CssClass="radio">M</asp:ListItem>
-                            <asp:ListItem CssClass="radio">L</asp:ListItem>
+                            <asp:ListItem CssClass="radio" style="margin-left: 20px">M</asp:ListItem>
+                            <asp:ListItem CssClass="radio" style="margin-left: 20px">L</asp:ListItem>
                         </asp:RadioButtonList>
                     </div>
                 </div>

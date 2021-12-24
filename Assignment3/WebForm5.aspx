@@ -9,7 +9,6 @@
         summary += isvalidphone();
         summary += isvalidpwd();
         summary += isvalidcfmpwd();
-        summary += isvalidanswer();
         summary += isvalidadd();
         summary += isvalidstate();
         summary += isvalidcity();
@@ -80,20 +79,9 @@
                 return "";
             }
     }
-<%--    function isvalidanswer() {
-        var uid;
-        var temp = document.getElementById("<%=TextBox5.ClientID %>");
-            uid = temp.value;
-            if (uid == "") {
-                return ("Please Answer the Security Question" + "\n");
-            }
-            else {
-                return "";
-            }
-    }--%>
     function isvalidadd() {
         var uid;
-        var temp = document.getElementById("<%=TextBox11.ClientID %>");
+        var temp = document.getElementById("<%=TextBox12.ClientID %>");
         uid = temp.value;
         if (uid == "") {
             return ("Please Enter your Address" + "\n");
@@ -138,8 +126,8 @@
     } 
 </script>
     <div>
-        <asp:Label ID="successMessage" runat="server" Text=""></asp:Label>
-        <asp:Label ID="failMessage" runat="server" Text=""></asp:Label>
+        <h3 class="section-title"><asp:Label ID="successMessage" style="text-align: center; color: #00adb5;" runat="server" Text="" Visible="false"></asp:Label></h3>
+        <h3 class="section-title"><asp:Label ID="failMessage"  style="text-align: center; color: crimson;" runat="server" Text=""></asp:Label></h3>
     </div>
 
     <asp:HiddenField ID="hiddenFieldUserID" runat ="server" />
@@ -207,18 +195,8 @@
                             </div>
                         </div>
                         <br />
-                        <br />
-                        <div class="row">
-                            <center>
-                                <hr>
-                            </center>
-                            <asp:Label ID="Label2" runat="server" Text="Address"></asp:Label>
-                        </div>
                         <div class="row g-2">
-                            <div class="form-floating mb-3">
-                                <asp:TextBox ID="TextBox11" CssClass="form-control" runat="server" placeholder="Security Phrase"></asp:TextBox>
-                                <label for="floatingInput">Security Phrase</label>
-                            </div>
+
                             <div class="form-floating mb-3">
                                 <asp:TextBox ID="TextBox12" CssClass="form-control" runat="server" placeholder="Address Line"></asp:TextBox>
                                 <label for="floatingInput">Address Line</label>
