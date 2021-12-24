@@ -77,9 +77,9 @@
                                     <h2>CART TOTAL</h2>
                                     <div class="content">
                                         <ul>
-                                            <li>Sub Total</li>
+                                            <li>Sub Total<asp:Label ID="subTotal" runat="server" Text="Label"></asp:Label></li>
                                             <li>(+) Shipping<span>RM8.00</span></li>
-                                            <li>Total</li>
+                                            <li>Total<asp:Label ID="totalPay" runat="server" Text="Label"></asp:Label></li>
                                         </ul>
                                     </div>
                                 </div>

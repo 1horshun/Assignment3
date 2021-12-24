@@ -6,6 +6,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data;
 using System.Data.SqlClient;
+using System.Web.UI.HtmlControls;
 
 namespace Assignment3
 {
@@ -22,7 +23,7 @@ namespace Assignment3
             SqlDataReader sdr1 = cmd4.ExecuteReader();
             if (sdr1.Read())
             {
-                userID = Convert.ToInt32(sdr1[userID]);
+                userID = Convert.ToInt32(sdr1["userID"]);
             }
             sdr1.Close();
 
@@ -55,13 +56,72 @@ namespace Assignment3
             SqlDataReader sdr = cmd.ExecuteReader();
             if(sdr.Read())
             {
-                total = Convert.ToInt32(sdr["total"].ToString());
+                if(sdr["total"] is DBNull)
+                {
+                    total = 0; 
+                }else
+                {
+                    total = Convert.ToInt32(sdr["total"].ToString());
+                }
             }
 
             subtotal.InnerText = "RM" + total + ".00";
             con.Close();
 
             return total;
+        }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database1.mdf;Integrated Security=True");
+
+            con.Open();
+            int userID = default;
+            SqlCommand cmd4 = new SqlCommand("select userID from CUSTOMER where username=@username", con);
+            cmd4.Parameters.AddWithValue("@username", Session["uname"].ToString());
+            SqlDataReader sdr1 = cmd4.ExecuteReader();
+            if (sdr1.Read())
+            {
+                userID = Convert.ToInt32(sdr1["userID"]);
+            }
+            sdr1.Close();
+            RepeaterItem item = (sender as LinkButton).NamingContainer as RepeaterItem;
+            HtmlTableCell pName = (HtmlTableCell)item.FindControl("product_name");
+            HtmlTableCell pColor = (HtmlTableCell)item.FindControl("product_color");
+            HtmlTableCell pSize = (HtmlTableCell)item.FindControl("product_size");
+            string productName = pName.InnerText;
+            string productColor = pColor.InnerText;
+            string productSize = pSize.InnerText;
+            SqlCommand cmd = new SqlCommand("select productID from PRODUCT where productName=@pName and productColor=@pColor and productSize=@pSize", con);
+            cmd.Parameters.AddWithValue("@pName", productName);
+            cmd.Parameters.AddWithValue("@pColor", productColor);
+            cmd.Parameters.AddWithValue("@pSize", productSize);
+
+            int productID = default;
+
+            SqlDataReader sdr = cmd.ExecuteReader();
+            if (sdr.Read())
+            {
+                productID = Convert.ToInt32(sdr["productID"]);
+            }
+
+            sdr.Close();
+            SqlCommand cmd5 = new SqlCommand("delete from CART where productid=@productID and uid=@userID", con);
+            cmd5.Parameters.AddWithValue("@productID", productID);
+            cmd5.Parameters.AddWithValue("@userID", userID);
+            cmd5.ExecuteNonQuery();
+            Response.Redirect("WebForm2.aspx");
+            con.Close();
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebForm1.aspx");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("WebForm3.aspx");
         }
     }
 }

@@ -20,7 +20,9 @@
 	                        <thead>
 	                        <tr class="main-heading">
 		                        <th>Product</th>
-		                        <th class="text-center name th">Name</th> 
+		                        <th class="text-center name th">Name</th>
+                                <th class="text-center th">Color</th>
+                                <th class="text-center th">Size</th>
 		                        <th class="text-center th">Unit Price</th>
 		                        <th class="text-center th">Quantity</th>
 		                        <th class="text-center th">Total</th>
@@ -32,11 +34,13 @@
 
 	                        <tr>
 		                        <td class="product-img" id="Image1"><img src='<%#Eval("imagePath") %>' style: width="150px"; height="150px";/></td>
-		                        <td><%#Eval("productName") %></td>
+		                        <td runat="server" id="product_name"><%#Eval("productName") %></td>
+                                <td runat="server" id="product_color"><%#Eval("productColor") %></td>
+                                <td runat="server" id="product_size"><%#Eval("productSize") %></td>
 		                        <td>RM<%#Eval("productPrice")%></td>
 		                        <td><%#Eval("productQuantity") %></td>
 		                        <td>RM<%#Eval("totalprice")%></td>
-		                        <td></td>
+		                        <td><asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Remove</asp:LinkButton></td>
 	                        </tr>
                         </ItemTemplate>
                         <FooterTemplate>
@@ -68,8 +72,8 @@
                                         </ul>
 
                                         <div class="cartBtn">
-                                            <asp:Button ID="Button1" runat="server" Text="Checkout" CssClass="btn"/>
-                                            <asp:Button ID="Button2" runat="server" Text="Continue Shopping" CssClass="btn"/>
+                                            <asp:Button ID="Button1" runat="server" Text="Checkout" CssClass="btn" OnClick="Button1_Click"/>
+                                            <asp:Button ID="Button2" runat="server" Text="Continue Shopping" CssClass="btn" OnClick="Button2_Click"/>
                                         </div>
                                     </div>
                                 </div>
