@@ -3,6 +3,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContentPlaceHolder1" runat="server">
     <!-- CONTACT FORM -->
     <div class="contact-us">
+
+        <h3 class="section-title"><asp:Label ID="Label6" runat="server" Text="" style="text-align: center; color: crimson;" Visible = "false">></asp:Label></h3>
+        <h3 class="section-title"><asp:Label ID="Label7" runat="server" Text="" style="text-align: center; color: #00adb5;" Visible="false"></asp:Label></h3>
+
         <div class="contact-header container form-main">
             <div class="title">
                 <h4>Get In Touch</h4>
@@ -42,7 +46,7 @@
                     <br />
 
                     <div class="form-group button col-12">
-                        <button type="submit" class="btn">Send Message</button>
+                        <asp:Button ID="Button1" runat="server" Text="Send Message" OnClick="Button1_Click" CssClass="btn"/>
                     </div>
                 </div>
             </div>

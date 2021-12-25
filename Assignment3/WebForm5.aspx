@@ -227,7 +227,7 @@
                     <br />
                     <div class="d-grid gap-2 col-6 mx-auto">
                         <asp:Button ID="Button1" runat="server" Text="Submit Details" CssClass="btn btn-block" OnClick="userRegister"/>
-                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="login-link" NavigateUrl="~/WebForm1.aspx">Back to Login Page</asp:HyperLink>
+                        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="login-link" NavigateUrl="~/WebForm4.aspx">Back to Login Page</asp:HyperLink>
                     </div>
 
                 </div>
