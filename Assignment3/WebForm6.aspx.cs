@@ -42,6 +42,7 @@ namespace Assignment3
             {
                 Label6.Text = "Please Enter All Fields!";
                 Label6.Visible = true;
+                Label7.Visible = false;
             }
             else
             {
